@@ -1,0 +1,53 @@
+22:27:27 INFO  : Launching XSDB server: xsdb.bat -interactive H:\project_dft\project_dft.sdk\temp_xsdb_launch_script.tcl
+22:27:29 INFO  : XSDB server has started successfully.
+22:27:29 INFO  : Processing command line option -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf.
+22:37:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:37:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+22:37:08 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+22:39:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:39:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+22:39:21 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+22:57:28 INFO  : Launching XSDB server: xsdb.bat -interactive H:\project_dft\project_dft.sdk\temp_xsdb_launch_script.tcl
+22:57:30 INFO  : XSDB server has started successfully.
+22:57:30 INFO  : Processing command line option -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf.
+22:57:30 INFO  : Checking for hwspec changes in the project mcs_top_hw_platform_0.
+22:57:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1493869861376,  Project:1493866873974
+22:57:31 INFO  : The hardware specification for project 'mcs_top_hw_platform_0' is different from H:/project_dft/project_dft.sdk/mcs_top.hdf.
+22:57:32 INFO  : Copied contents of H:/project_dft/project_dft.sdk/mcs_top.hdf into \mcs_top_hw_platform_0\system.hdf.
+22:57:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:57:43 INFO  : 
+22:57:44 INFO  : Updating hardware inferred compiler options for mem_rdwr.
+22:57:44 INFO  : Clearing existing target manager status.
+23:00:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:00:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:00:02 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+23:02:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:02:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:02:47 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+23:05:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:05:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:05:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:05:49 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+23:12:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:12:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:12:41 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+23:13:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:13:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:13:29 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+23:14:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:14:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:14:34 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+23:21:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:21:43 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+23:24:11 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:24:54 INFO  : Launching XSDB server: xsdb.bat -interactive H:\project_dft\project_dft.sdk\temp_xsdb_launch_script.tcl
+23:24:56 INFO  : XSDB server has started successfully.
+23:24:56 INFO  : Processing command line option -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf.
+23:24:56 INFO  : Checking for hwspec changes in the project mcs_top_hw_platform_0.
+23:26:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:26:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:26:20 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"
+23:27:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:27:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274663369A" && level==0} -index 0' command is executed.
+23:27:32 INFO  : FPGA configured successfully with bitstream "H:/project_dft/project_dft.sdk/mcs_top_hw_platform_0/download.bit"

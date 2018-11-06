@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Mar 10 13:29:11 2017
+# Process ID: 7616
+# Log file: V:/EECS 700-FPGA/New folder/project_playlist/vivado.log
+# Journal file: V:/EECS 700-FPGA/New folder/project_playlist\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {V:/EECS 700-FPGA/New folder/project_playlist/project_playlist.xpr}
+INFO: [Project 1-313] Project file moved from 'H:/project_playlist' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'V:/EECS 700-FPGA/New folder/New folder/decoder1.vhd', nor could it be found using path 'H:/New folder/decoder1.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'V:/EECS 700-FPGA/New folder/New folder/addrcount1.vhd', nor could it be found using path 'H:/New folder/addrcount1.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'V:/EECS 700-FPGA/New folder/New folder/ratecount3.vhd', nor could it be found using path 'H:/New folder/ratecount3.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'V:/EECS 700-FPGA/New folder/New folder/memory12.vhd', nor could it be found using path 'H:/New folder/memory12.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'V:/EECS 700-FPGA/New folder/New folder/volume11.vhd', nor could it be found using path 'H:/New folder/volume11.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'V:/EECS 700-FPGA/New folder/New folder/pdm2.vhd', nor could it be found using path 'H:/New folder/pdm2.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'V:/EECS 700-FPGA/New folder/New folder/dds_top1.vhd', nor could it be found using path 'H:/New folder/dds_top1.vhd'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'V:/EECS 700-FPGA/New folder/New folder/constraintsssss1.xdc', nor could it be found using path 'H:/New folder/constraintsssss1.xdc'.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2016) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2016) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option CompiledLibDirXSim has no valid value
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirIES
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirActivehdl
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CreateRefXciForCoreContainers
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPUserFilesDir
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPStaticSourceDir
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name EnableBDX
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTXSimLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTModelSimLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTQuestaLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTIesLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTVcsLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTRivieraLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTActivehdlLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTXSimExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTModelSimExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTQuestaExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTIesExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTVcsExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTRivieraExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTActivehdlExportSim
+WARNING: [Project 1-231] Project 'project_playlist.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 10 14:31:39 2017...

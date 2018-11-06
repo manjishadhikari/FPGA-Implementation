@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100ticsg324-1L" LaunchTime="1486341537">
+  <File Type="OPT-TIMING" Name="memory_01_timing_summary_opted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="memory_01_physopt.dcp"/>
+  <File Type="PA-DCP" Name="memory_01.dcp"/>
+  <File Type="OPT-DCP" Name="memory_01_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="memory_01_route_status.pb"/>
+  <File Type="PA-TCL" Name="memory_01.tcl"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="memory_01_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="memory_01_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="memory_01_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="memory_01_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="memory_01.hwdef"/>
+  <File Type="RDI-RDI" Name="memory_01.vdi"/>
+  <File Type="PWROPT-DRC" Name="memory_01_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="memory_01_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="memory_01_placed.dcp"/>
+  <File Type="PLACE-IO" Name="memory_01_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="memory_01_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="memory_01_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="memory_01_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="memory_01_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="memory_01_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="memory_01_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="memory_01_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="memory_01_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="memory_01_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="memory_01_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="memory_01_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="memory_01_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="memory_01_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="memory_01_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="memory_01_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="memory_01_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="memory_01.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="memory_01_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="memory_01_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="memory_01_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="memory_01_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="memory_01_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="memory_01_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="memory_01_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="memory_01_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="memory_01_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="memory_01_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="memory_01_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="memory_01_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="memory_01_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="memory_01_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="memory_01_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="memory_01.bin"/>
+  <File Type="BITSTR-MSK" Name="memory_01.msk"/>
+  <File Type="BITSTR-RBT" Name="memory_01.rbt"/>
+  <File Type="BITSTR-NKY" Name="memory_01.nky"/>
+  <File Type="BITSTR-BMM" Name="memory_01_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="memory_01.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="memory_01.sysdef"/>
+  <File Type="BG-BGN" Name="memory_01.bgn"/>
+  <File Type="BG-DRC" Name="memory_01.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/memry_source.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="memory_01"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

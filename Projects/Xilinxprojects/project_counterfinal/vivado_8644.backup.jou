@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Feb 07 17:37:24 2017
+# Process ID: 8644
+# Log file: C:/Users/m983a462/project_counterfinal/vivado.log
+# Journal file: C:/Users/m983a462/project_counterfinal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/m983a462/project_counterfinal/project_counterfinal.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source ratecounter_sourcef_tb.tcl
+close_sim

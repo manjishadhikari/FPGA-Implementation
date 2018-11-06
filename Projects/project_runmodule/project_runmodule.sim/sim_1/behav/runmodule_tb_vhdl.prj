@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_runmodule.srcs/sources_1/new/runmodule.vhd"
+vhdl xil_defaultlib  "../../../project_runmodule.srcs/sim_1/new/runmodule_tb.vhd"
+
+# Do not sort compile order
+nosort

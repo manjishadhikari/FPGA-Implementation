@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Feb 26 15:13:03 2017
+# Process ID: 7988
+# Current directory: H:/Xilinxprojects/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1300 H:\Xilinxprojects\project_2\project_2.xpr
+# Log file: H:/Xilinxprojects/project_2/vivado.log
+# Journal file: H:/Xilinxprojects/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Xilinxprojects/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 768.008 ; gain = 116.730
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 26 15:13:38 2017...

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/Test_Makeup/Q1/xorr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lut_xor
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/Test_Makeup/Q1/xor_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity lut_xor_tb

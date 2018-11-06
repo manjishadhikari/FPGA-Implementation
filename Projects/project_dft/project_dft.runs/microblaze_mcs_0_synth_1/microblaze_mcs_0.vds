@@ -1,0 +1,339 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed May 03 13:32:27 2017
+# Process ID: 5644
+# Current directory: H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1
+# Command line: vivado.exe -log microblaze_mcs_0.vds -mode batch -messageDb vivado.pb -notrace -source microblaze_mcs_0.tcl
+# Log file: H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/microblaze_mcs_0.vds
+# Journal file: H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source microblaze_mcs_0.tcl -notrace
+Command: synth_design -top microblaze_mcs_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9912 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:27 . Memory (MB): peak = 337.184 ; gain = 128.582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'microblaze_mcs_0' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/synth/microblaze_mcs_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:13]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_dlmb_0' [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_dlmb_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_dlmb_0' (1#1) [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_dlmb_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_dlmb_cntlr_0' [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_dlmb_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_dlmb_cntlr_0' (2#1) [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_dlmb_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_ilmb_0' [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_ilmb_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_ilmb_0' (3#1) [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_ilmb_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_ilmb_cntlr_0' [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_ilmb_cntlr_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_ilmb_cntlr_0' (4#1) [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_ilmb_cntlr_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_iomodule_0_0' [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_iomodule_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_iomodule_0_0' (5#1) [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_iomodule_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_lmb_bram_I_0' [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_lmb_bram_I_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_lmb_bram_I_0' (6#1) [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_lmb_bram_I_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_microblaze_I_0' [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_microblaze_I_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_microblaze_I_0' (7#1) [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_microblaze_I_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'microblaze_I' of module 'bd_fc5c_0_microblaze_I_0' requires 24 connections, but only 23 given [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:265]
+INFO: [Synth 8-638] synthesizing module 'bd_fc5c_0_rst_0_0' [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_rst_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0_rst_0_0' (8#1) [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/realtime/bd_fc5c_0_rst_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_0' of module 'bd_fc5c_0_rst_0_0' requires 10 connections, but only 8 given [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:289]
+INFO: [Synth 8-256] done synthesizing module 'bd_fc5c_0' (9#1) [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:13]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_mcs_0' (10#1) [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/synth/microblaze_mcs_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 374.590 ; gain = 165.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:28 . Memory (MB): peak = 374.590 ; gain = 165.988
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'bd_fc5c_0_dlmb_0' instantiated as 'inst/dlmb' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:128]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'bd_fc5c_0_dlmb_cntlr_0' instantiated as 'inst/dlmb_cntlr' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:156]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'bd_fc5c_0_ilmb_0' instantiated as 'inst/ilmb' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:177]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'bd_fc5c_0_ilmb_cntlr_0' instantiated as 'inst/ilmb_cntlr' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:203]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'bd_fc5c_0_iomodule_0_0' instantiated as 'inst/iomodule_0' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:224]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'bd_fc5c_0_lmb_bram_I_0' instantiated as 'inst/lmb_bram_I' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:248]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'bd_fc5c_0_microblaze_I_0' instantiated as 'inst/microblaze_I' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:265]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'bd_fc5c_0_rst_0_0' instantiated as 'inst/rst_0' [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v:289]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp/bd_fc5c_0_microblaze_I_0_in_context.xdc] for cell 'inst/microblaze_I'
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp/bd_fc5c_0_microblaze_I_0_in_context.xdc] for cell 'inst/microblaze_I'
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_2/bd_fc5c_0_rst_0_0_in_context.xdc] for cell 'inst/rst_0'
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_2/bd_fc5c_0_rst_0_0_in_context.xdc] for cell 'inst/rst_0'
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_3/bd_fc5c_0_ilmb_0_in_context.xdc] for cell 'inst/ilmb'
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_3/bd_fc5c_0_ilmb_0_in_context.xdc] for cell 'inst/ilmb'
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_4/bd_fc5c_0_dlmb_0_in_context.xdc] for cell 'inst/dlmb'
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_4/bd_fc5c_0_dlmb_0_in_context.xdc] for cell 'inst/dlmb'
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_5/bd_fc5c_0_dlmb_cntlr_0_in_context.xdc] for cell 'inst/dlmb_cntlr'
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_5/bd_fc5c_0_dlmb_cntlr_0_in_context.xdc] for cell 'inst/dlmb_cntlr'
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_6/bd_fc5c_0_ilmb_cntlr_0_in_context.xdc] for cell 'inst/ilmb_cntlr'
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_6/bd_fc5c_0_ilmb_cntlr_0_in_context.xdc] for cell 'inst/ilmb_cntlr'
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_7/bd_fc5c_0_lmb_bram_I_0_in_context.xdc] for cell 'inst/lmb_bram_I'
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_7/bd_fc5c_0_lmb_bram_I_0_in_context.xdc] for cell 'inst/lmb_bram_I'
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_8/bd_fc5c_0_iomodule_0_0_in_context.xdc] for cell 'inst/iomodule_0'
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/.Xil/Vivado-5644-2002-13/dcp_8/bd_fc5c_0_iomodule_0_0_in_context.xdc] for cell 'inst/iomodule_0'
+Parsing XDC File [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0_board.xdc] for cell 'inst'
+Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [H:/project_dft/project_dft.runs/microblaze_mcs_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 630.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/dlmb. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/dlmb_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ilmb. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ilmb_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/iomodule_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/lmb_bram_I. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/microblaze_I. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rst_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:01:12 . Memory (MB): peak = 630.352 ; gain = 421.750
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:01:13 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:01:13 . Memory (MB): peak = 630.352 ; gain = 421.750
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/dlmb_cntlr/BRAM_Clk_A' to pin 'inst/dlmb_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/ilmb_cntlr/BRAM_Clk_A' to pin 'inst/ilmb_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5820] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:01:21 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:01:21 . Memory (MB): peak = 630.352 ; gain = 421.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------+----------+
+|      |BlackBox name            |Instances |
++------+-------------------------+----------+
+|1     |bd_fc5c_0_dlmb_0         |         1|
+|2     |bd_fc5c_0_dlmb_cntlr_0   |         1|
+|3     |bd_fc5c_0_ilmb_0         |         1|
+|4     |bd_fc5c_0_ilmb_cntlr_0   |         1|
+|5     |bd_fc5c_0_iomodule_0_0   |         1|
+|6     |bd_fc5c_0_lmb_bram_I_0   |         1|
+|7     |bd_fc5c_0_microblaze_I_0 |         1|
+|8     |bd_fc5c_0_rst_0_0        |         1|
++------+-------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |bd_fc5c_0_dlmb_0         |     1|
+|2     |bd_fc5c_0_dlmb_cntlr_0   |     1|
+|3     |bd_fc5c_0_ilmb_0         |     1|
+|4     |bd_fc5c_0_ilmb_cntlr_0   |     1|
+|5     |bd_fc5c_0_iomodule_0_0   |     1|
+|6     |bd_fc5c_0_lmb_bram_I_0   |     1|
+|7     |bd_fc5c_0_microblaze_I_0 |     1|
+|8     |bd_fc5c_0_rst_0_0        |     1|
++------+-------------------------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   714|
+|2     |  inst   |bd_fc5c_0 |   714|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:01:21 . Memory (MB): peak = 634.504 ; gain = 425.902
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 634.504 ; gain = 111.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:01:22 . Memory (MB): peak = 634.504 ; gain = 425.902
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [h:/project_dft/project_dft.srcs/sources_1/ip/microblaze_mcs_0/microblaze_mcs_0_board.xdc] for cell 'inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:01:11 . Memory (MB): peak = 661.926 ; gain = 405.195
+INFO: [Coretcl 2-1174] Renamed 9 cell refs.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 661.926 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 03 13:33:53 2017...

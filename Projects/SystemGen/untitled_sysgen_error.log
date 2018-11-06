@@ -1,0 +1,19 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2016.2                 C:/Xilinx/Vivado/2016.2
+Matlab 9.0.0.341360 (R2016a)            C:\Program Files\MATLAB\R2016a
+Vivado 2016.2                           C:/Xilinx/Vivado/2016.2
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Undriven input port
+     Block: 'untitled/Gateway Out2'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/Gateway Out2'
+
+Details:
+The input ports on this block must be driven by other Xilinx blocks
+--------------------------------------------------------------------------------

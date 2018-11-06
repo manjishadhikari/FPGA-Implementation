@@ -1,0 +1,15 @@
+sv xil_defaultlib "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" 
+sv xil_defaultlib "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" 
+sv xil_defaultlib "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" 
+sv xil_defaultlib "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" 
+sv xil_defaultlib "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" 
+sv xil_defaultlib "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" 
+sv xil_defaultlib "C:/Xilinx/Vivado/2016.2/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" 
+verilog blk_mem_gen_v8_3_3 "../../../ipstatic/blk_mem_gen_v8_3_3/simulation/blk_mem_gen_v8_3.v" 
+verilog xil_defaultlib "../../../../project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/ip/ip_6/sim/bd_fc5c_0_lmb_bram_I_0.v" 
+verilog xil_defaultlib "../../../../project_dft.srcs/sources_1/ip/microblaze_mcs_0/bd_0/hdl/bd_fc5c_0.v" 
+verilog xil_defaultlib "../../../../project_dft.srcs/sources_1/ip/microblaze_mcs_0/sim/microblaze_mcs_0.v" 
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

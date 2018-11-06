@@ -1,0 +1,367 @@
+
+*** Running vivado
+    with args -log awg.vds -m64 -mode batch -messageDb vivado.pb -notrace -source awg.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source awg.tcl -notrace
+Command: synth_design -top awg -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6244 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 296.488 ; gain = 87.297
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'awg' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/knightrider.vhd:23]
+INFO: [Synth 8-3491] module 'runmodule' declared at 'H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/runmodule.vhd:34' bound to instance 'runmodule1' of component 'runmodule' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/knightrider.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'runmodule' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/runmodule.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'runmodule' (1#1) [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/runmodule.vhd:42]
+INFO: [Synth 8-3491] module 'ratecounter_source' declared at 'H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/counter4.vhd:6' bound to instance 'ratecounter' of component 'ratecounter_source' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/knightrider.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'ratecounter_source' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/counter4.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ratecounter_source' (2#1) [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/counter4.vhd:16]
+INFO: [Synth 8-3491] module 'addrcounter_source' declared at 'H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/addrcounterreal.vhd:6' bound to instance 'addrcounter' of component 'addrcounter_source' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/knightrider.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'addrcounter_source' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/addrcounterreal.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'addrcounter_source' (3#1) [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/addrcounterreal.vhd:15]
+INFO: [Synth 8-3491] module 'memory_01' declared at 'H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/addrcounter.vhd:7' bound to instance 'mem' of component 'memory_01' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/knightrider.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'memory_01' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/addrcounter.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'memory_01' (4#1) [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/addrcounter.vhd:14]
+INFO: [Synth 8-3491] module 'volume' declared at 'H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/volume.vhd:34' bound to instance 'volumecontrol' of component 'volume' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/knightrider.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'volume' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/volume.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'volume' (5#1) [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/volume.vhd:42]
+INFO: [Synth 8-3491] module 'pdm' declared at 'H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/pdm.vhd:5' bound to instance 'pdm1' of component 'pdm' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/knightrider.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'pdm' [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/pdm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'pdm' (6#1) [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/pdm.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'awg' (7#1) [H:/Backup/project_awg_v2/project_2.srcs/sources_1/new/knightrider.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 389.438 ; gain = 180.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 389.438 ; gain = 180.246
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [H:/Backup/project_awg_v2/project_2.srcs/constrs_1/new/constraintsssss.xdc]
+Finished Parsing XDC File [H:/Backup/project_awg_v2/project_2.srcs/constrs_1/new/constraintsssss.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/Backup/project_awg_v2/project_2.srcs/constrs_1/new/constraintsssss.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/awg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/awg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 662.203 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:29 ; elapsed = 00:01:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                1 Bit    Registers := 5     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module runmodule 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module ratecounter_source 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module addrcounter_source 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module memory_01 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module volume 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module pdm 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:29 ; elapsed = 00:01:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:43 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:02:19 ; elapsed = 00:02:43 . Memory (MB): peak = 662.203 ; gain = 453.012
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|memory_01   | temp_reg     | 16384x12      | Block RAM      | 
+|awg         | mem/temp_reg | 16384x12      | Block RAM      | 
++------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (volumecontrol/temp_reg[3]) is unused and will be removed from module awg.
+WARNING: [Synth 8-3332] Sequential element (volumecontrol/temp_reg[2]) is unused and will be removed from module awg.
+WARNING: [Synth 8-3332] Sequential element (volumecontrol/temp_reg[1]) is unused and will be removed from module awg.
+WARNING: [Synth 8-3332] Sequential element (volumecontrol/temp_reg[0]) is unused and will be removed from module awg.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:02:44 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:19 ; elapsed = 00:02:44 . Memory (MB): peak = 662.203 ; gain = 453.012
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:27 ; elapsed = 00:02:52 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:28 ; elapsed = 00:02:52 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |CARRY4     |    24|
+|3     |LUT1       |    45|
+|4     |LUT2       |    26|
+|5     |LUT3       |    12|
+|6     |LUT4       |    25|
+|7     |LUT5       |     8|
+|8     |LUT6       |    26|
+|9     |RAMB36E1   |     1|
+|10    |RAMB36E1_1 |     1|
+|11    |RAMB36E1_2 |     1|
+|12    |RAMB36E1_3 |     1|
+|13    |RAMB36E1_4 |     1|
+|14    |FDCE       |    10|
+|15    |FDRE       |    99|
+|16    |IBUF       |     7|
+|17    |OBUF       |     2|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------+-------------------+------+
+|      |Instance        |Module             |Cells |
++------+----------------+-------------------+------+
+|1     |top             |                   |   290|
+|2     |  addrcounter   |addrcounter_source |    70|
+|3     |  mem           |memory_01          |    37|
+|4     |  pdm1          |pdm                |    89|
+|5     |  ratecounter   |ratecounter_source |    44|
+|6     |  runmodule1    |runmodule          |     3|
+|7     |  volumecontrol |volume             |    37|
++------+----------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:57 ; elapsed = 00:02:30 . Memory (MB): peak = 662.203 ; gain = 169.785
+Synthesis Optimization Complete : Time (s): cpu = 00:02:28 ; elapsed = 00:02:53 . Memory (MB): peak = 662.203 ; gain = 453.012
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:28 ; elapsed = 00:02:51 . Memory (MB): peak = 662.203 ; gain = 447.293
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 662.203 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 09 20:14:48 2017...

@@ -1,0 +1,1 @@
+-wto "e352579461724bbba614678988811dfe" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "audioserzderz_tb_behav" "xil_defaultlib.audioserzderz_tb" -log "elaborate.log" 

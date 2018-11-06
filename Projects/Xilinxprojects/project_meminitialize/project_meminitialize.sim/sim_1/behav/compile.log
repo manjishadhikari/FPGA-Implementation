@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/Xilinxprojects/drive-download-20170224T145020Z-001/rom_vhd_mif.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/Xilinxprojects/project_meminitialize/project_meminitialize.srcs/sim_1/new/simfile1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01_tb
+ERROR: [VRFC 10-91] add is not declared [H:/Xilinxprojects/project_meminitialize/project_meminitialize.srcs/sim_1/new/simfile1.vhd:44]
+ERROR: [VRFC 10-91] add is not declared [H:/Xilinxprojects/project_meminitialize/project_meminitialize.srcs/sim_1/new/simfile1.vhd:46]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/Xilinxprojects/project_meminitialize/project_meminitialize.srcs/sim_1/new/simfile1.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/Xilinxprojects/project_meminitialize/project_meminitialize.srcs/sim_1/new/simfile1.vhd ignored due to errors

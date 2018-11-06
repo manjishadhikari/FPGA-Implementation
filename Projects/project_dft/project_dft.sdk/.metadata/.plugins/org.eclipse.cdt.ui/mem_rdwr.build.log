@@ -1,0 +1,41 @@
+23:26:56 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:47: warning: unused variable 'rd_di' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                                               ^
+../src/helloworld.c:69:41: warning: unused variable 'rd_dr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                                         ^
+../src/helloworld.c:69:29: warning: unused variable 'rd_cr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                             ^
+../src/helloworld.c:69:24: warning: unused variable 'rd_b' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mem_rdwr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_rdwr_bsp/microblaze_I/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mem_rdwr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_rdwr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mem_rdwr.elf  |tee "mem_rdwr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6584	    376	   3120	  10080	   2760	mem_rdwr.elf
+'Finished building: mem_rdwr.elf.size'
+' '
+
+23:27:04 Build Finished (took 7s.789ms)
+

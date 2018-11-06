@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1486516591">
+  <File Type="OPT-DCP" Name="ratecounter_source_opt.dcp"/>
+  <File Type="ROUTE-STATUS-PB" Name="ratecounter_source_route_status.pb"/>
+  <File Type="PA-TCL" Name="ratecounter_source.tcl"/>
+  <File Type="RDI-RDI" Name="ratecounter_source.vdi"/>
+  <File Type="PWROPT-DRC" Name="ratecounter_source_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ratecounter_source_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="ratecounter_source_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="ratecounter_source_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="ratecounter_source_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="ratecounter_source.hwdef"/>
+  <File Type="OPT-TIMING" Name="ratecounter_source_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ratecounter_source_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ratecounter_source_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ratecounter_source_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ratecounter_source_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ratecounter_source_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ratecounter_source_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ratecounter_source_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ratecounter_source_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ratecounter_source_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="ratecounter_source_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ratecounter_source_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ratecounter_source_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ratecounter_source_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ratecounter_source_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="ratecounter_source_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="ratecounter_source_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ratecounter_source_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="ratecounter_source_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ratecounter_source_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ratecounter_source_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIT" Name="ratecounter_source.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ratecounter_source_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ratecounter_source_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="ratecounter_source_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ratecounter_source_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ratecounter_source_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ratecounter_source_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ratecounter_source_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ratecounter_source_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ratecounter_source_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ratecounter_source_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ratecounter_source_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ratecounter_source_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ratecounter_source_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ratecounter_source_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ratecounter_source_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="ratecounter_source.bin"/>
+  <File Type="BITSTR-MSK" Name="ratecounter_source.msk"/>
+  <File Type="BITSTR-RBT" Name="ratecounter_source.rbt"/>
+  <File Type="BITSTR-NKY" Name="ratecounter_source.nky"/>
+  <File Type="BITSTR-BMM" Name="ratecounter_source_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ratecounter_source.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="ratecounter_source.sysdef"/>
+  <File Type="BG-BGN" Name="ratecounter_source.bgn"/>
+  <File Type="BG-DRC" Name="ratecounter_source.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/counter_sourcef.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ratecounter_source"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constr.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constr.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

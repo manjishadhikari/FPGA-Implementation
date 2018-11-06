@@ -1,0 +1,334 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 1752
+
+Current time: 	3/8/17 5:39:40 PM CST
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	m983a462
+User directory: V:/EECS 700-FPGA/prj1/project_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/m983a462/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/m983a462/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	130 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 368 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: V:\EECS 700-FPGA\prj1\project_2\project_2.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {V:/EECS 700-FPGA/prj1/project_2/project_2.xpr} 
+// [GUI Memory]: 50 MB (+50161kb) [00:00:07]
+// [Engine Memory]: 364 MB (+230566kb) [00:00:07]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {V:/EECS 700-FPGA/prj1/project_2/project_2.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 413 MB (+31768kb) [00:00:10]
+// [Engine Memory]: 440 MB (+6654kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 461 MB. GUI used memory: 34 MB. Current time: 3/8/17 5:39:45 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 465 MB (+3047kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_2; location: V:/EECS 700-FPGA/prj1/project_2; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 729.176 ; gain = 157.148 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 26 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, awg - Behavioral (knightrider.vhd)]", 1); // A:k (H:JPanel, cl:JFrame)
+// [GUI Memory]: 53 MB (+528kb) [00:02:11]
+// [GUI Memory]: 56 MB (+463kb) [00:02:44]
+// [Engine Memory]: 488 MB (+89kb) [00:04:30]
+// [GUI Memory]: 59 MB (+165kb) [00:05:51]
+// [GUI Memory]: 64 MB (+1297kb) [00:08:09]
+// Elapsed time: 448 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cl:JFrame)
+// Elapsed time: 106 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, awg - Behavioral (knightrider.vhd)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, awg - Behavioral (knightrider.vhd)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// [GUI Memory]: 76 MB (+9553kb) [00:09:57]
+selectCodeEditor("knightrider.vhd", 576, 202); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("knightrider.vhd", 616, 233); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 61, 326); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 58 seconds
+selectCodeEditor("knightrider.vhd", 416, 295); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 116, 291); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 248, 296); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 194, 212); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 73, 234); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 42, 203); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 16, 214); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 80 MB (+109kb) [00:23:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 488 MB. GUI used memory: 43 MB. Current time: 3/8/17 6:09:45 PM CST
+// Elapsed time: 2062 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_knightrider - tb (simfile1111.vhd)]", 5, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_knightrider - tb (simfile1111.vhd)]", 5, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectCodeEditor("simfile1111.vhd", 434, 175); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("simfile1111.vhd", 376, 301); // bj:J (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 510 MB. GUI used memory: 48 MB. Current time: 3/8/17 6:25:52 PM CST
+// [Engine Memory]: 515 MB (+2551kb) [00:46:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 48 MB. Current time: 3/8/17 6:26:42 PM CST
+// [GUI Memory]: 84 MB (+28kb) [00:58:18]
+// [GUI Memory]: 88 MB (+128kb) [01:10:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 520 MB. GUI used memory: 47 MB. Current time: 3/8/17 6:56:45 PM CST
+// Elapsed time: 2449 seconds
+selectCodeEditor("simfile1111.vhd", 52, 59); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("simfile1111.vhd", 75, 58); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("simfile1111.vhd", 152, 76); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("simfile1111.vhd", 149, 60); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("simfile1111.vhd", 51, 77); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("simfile1111.vhd", 158, 113); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sim_1 
+selectCodeEditor("simfile1111.vhd", 383, 192); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 526 MB. GUI used memory: 40 MB. Current time: 3/8/17 7:26:49 PM CST
+// Elapsed time: 2294 seconds
+selectCodeEditor("simfile1111.vhd", 402, 128); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // w:Y (v:H, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// d:cp (cl:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [USF-XSim-27] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'tb_awg' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/prj1/project_2/project_2.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/prj1/project_2/project_2.sim/sim_1/behav' 
+// Tcl Message: Vivado Simulator 2015.2 Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 954cc1a6a64f4795962528d3e34c615d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_awg_behav xil_defaultlib.tb_awg -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Built simulation snapshot tb_awg_behav  ****** Webtalk v2015.2 (64-bit)   **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015   **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.  source V:/EECS -notrace couldn't read file "V:/EECS": permission denied INFO: [Common 17-206] Exiting Webtalk at Wed Mar 08 19:45:26 2017... 
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/prj1/project_2/project_2.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_awg_behav -key {Behavioral:sim_1:Functional:tb_awg} -tclbatch {tb_awg.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2015.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source tb_awg.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_awg_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 753.117 ; gain = 0.531 
+// 'c' command handler elapsed time: 8 seconds
+dismissDialog("Run Simulation"); // d:cp (cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 535 MB. GUI used memory: 44 MB. Current time: 3/8/17 7:56:08 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Elapsed time: 645 seconds
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // E:w
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simfile1111.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+closeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ap:DockableFrame (FrameContainer:JideTabbedPane, cl:JFrame)
+// [Engine Memory]: 544 MB (+3338kb) [02:16:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 544 MB. GUI used memory: 43 MB. Current time: 3/8/17 7:56:27 PM CST
+selectTab((HResource) null, (HResource) null, "Sources", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_awg - tb (simfile1111.vhd)]", 5); // A:k (H:JPanel, cl:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("knightrider.vhd", 234, 182); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 293, 201); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 439, 261); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("knightrider.vhd", 423, 192); // bj:J (JPanel:JComponent, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, awg - Behavioral (knightrider.vhd)]", 1); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, awg - Behavioral (knightrider.vhd), mem - memory_01 - syn (addrcounter.vhd)]", 5, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cl:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // w:JideButton (CommandBar:DockableBar, b:g)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ab:JMenuItem (ai:JPopupMenu, b:g)
+// I:ag (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "pdm"); // ao:JTextField (JPanel:JComponent, I:ag)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ag)
+dismissDialog("Create Source File"); // I:ag (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // b:g (cl:JFrame)
+// Tcl Message: close [ open {V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sources_1/new/pdm.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sources_1/new/pdm.vhd}} 
+// L:ag (cl:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, L:ag)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Define Module"); // L:ag (cl:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pdm - Behavioral (pdm.vhd)]", 7, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pdm - Behavioral (pdm.vhd)]", 7, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("pdm.vhd", 243, 189); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "pdm.vhd", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pdm.vhd", 521, 284); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("pdm.vhd", 599, 302); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("pdm.vhd", 511, 179); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("pdm.vhd", 488, 228); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 126 seconds
+selectCodeEditor("pdm.vhd", 476, 303); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("pdm.vhd", 464, 184); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("pdm.vhd", 202, 95); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("pdm.vhd", 296, 161); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, awg - Behavioral (knightrider.vhd)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, awg - Behavioral (knightrider.vhd)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectCodeEditor("knightrider.vhd", 487, 286); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "knightrider.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("pdm.vhd", 378, 249); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 125 seconds
+selectCodeEditor("pdm.vhd", 60, 209); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "pdm.vhd", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pdm.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "simfile1111.vhd", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 41, 195); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "knightrider.vhd", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 44, 231); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 361, 330); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 409, 329); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 560, 380); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 27, 380); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("knightrider.vhd", 170, 440); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 117 seconds
+selectCodeEditor("knightrider.vhd", 381, 386); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("knightrider.vhd", 637, 367); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 12, 178); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("knightrider.vhd", 304, 200); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 333, 180); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 346, 213); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("knightrider.vhd", 113, 262); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 320, 403); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 496, 351); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 477, 347); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("knightrider.vhd", 543, 410); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 533, 364); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("knightrider.vhd", 471, 435); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 74 seconds
+selectCodeEditor("knightrider.vhd", 402, 180); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// cp:P (cl:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2 
+// cp:P (cl:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: launch_runs synth_2 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 08 20:11:11 2017] Launched synth_2... Run output will be captured here: V:/EECS 700-FPGA/prj1/project_2/project_2.runs/synth_2/runme.log 
+dismissDialog("Starting Design Runs"); // cp:P (cl:JFrame)
+// TclEventType: RUN_FAILED
+// Q:ap (cl:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 41 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, Q:ap)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // Q:ap (cl:JFrame)

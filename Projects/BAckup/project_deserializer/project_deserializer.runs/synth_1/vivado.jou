@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Mar 30 21:23:31 2017
+# Process ID: 5420
+# Log file: V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.runs/synth_1/audioloop.vds
+# Journal file: V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source audioloop.tcl -notrace

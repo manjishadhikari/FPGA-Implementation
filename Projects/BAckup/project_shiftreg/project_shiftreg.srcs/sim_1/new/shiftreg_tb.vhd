@@ -1,0 +1,69 @@
+
+library IEEE;
+use IEEE.Std_logic_1164.all;
+use IEEE.Numeric_Std.all;
+
+entity shiftregstr_tb is
+end;
+
+architecture bench of shiftregstr_tb is
+
+  component shiftregstr
+          port( clock: in std_logic;
+        --  reset: in std_logic;
+          ser_en: in std_logic;
+          ser_data: in std_logic;
+          shift_out: out std_logic_vector(15 downto 0));
+  end component;
+
+  signal clock: std_logic;
+  --signal reset: std_logic;
+  signal ser_en: std_logic;
+  signal ser_data: std_logic;
+  signal shift_out: std_logic_vector(15 downto 0);
+
+  constant clock_period: time := 10 ns;
+  signal stop_the_clock: boolean;
+
+begin
+
+  uut: shiftregstr port map ( clock     => clock,
+                           --   reset     => reset,
+                              ser_en    => ser_en,
+                              ser_data  => ser_data,
+                              shift_out => shift_out );
+
+  stimulus: process
+  begin
+   -- reset<='1';
+    wait for 30 ns;
+    --reset<='0';
+    wait for 20 ns;
+    ser_en<='1';
+    ser_data<='1';
+    wait for 50 ns;
+    ser_en<='0';
+    wait for 70 ns;
+    ser_en<='1';
+    ser_data<='0';
+    wait for 30 ns;
+    -- Put initialisation code here
+
+
+    -- Put test bench stimulus code here
+    wait for 1000 ns;
+    stop_the_clock <= true;
+    wait;
+  end process;
+
+  clocking: process
+  begin
+    while not stop_the_clock loop
+      clock <= '0', '1' after clock_period / 2;
+      wait for clock_period;
+    end loop;
+    wait;
+  end process;
+
+end;
+  

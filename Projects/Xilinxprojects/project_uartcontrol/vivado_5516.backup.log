@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Feb 08 21:30:21 2017
+# Process ID: 5516
+# Current directory: H:/Xilinxprojects/project_uartcontrol
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5440 H:\Xilinxprojects\project_uartcontrol\project_uartcontrol.xpr
+# Log file: H:/Xilinxprojects/project_uartcontrol/vivado.log
+# Journal file: H:/Xilinxprojects/project_uartcontrol\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 760.504 ; gain = 120.660
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1096.570 ; gain = 309.410
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'uart_loop' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.sim/sim_1/behav'
+"xvlog -m64 --relax -prj uart_loop_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Xilinxprojects/project_uartcontrol/ngc/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Xilinxprojects/project_uartcontrol/ngc/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Xilinxprojects/project_uartcontrol/test/uart_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_loop
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2a28f0a1558948b2963612005f31d711 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot uart_loop_behav xil_defaultlib.uart_loop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_rx_default
+Compiling module xil_defaultlib.uart_tx_default
+Compiling module xil_defaultlib.uart_loop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot uart_loop_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "uart_loop_behav -key {Behavioral:sim_1:Functional:uart_loop} -tclbatch {uart_loop.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source uart_loop.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'uart_loop_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1469.734 ; gain = 0.000
+add_force {/uart_loop/clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uart_loop/reset} -radix hex {0 0ns}
+add_force {/uart_loop/data_in} -radix hex {11111111 0ns}
+ERROR: [Simtcl 6-179] Couldn't add force for the following reason: Illegal value '11111111': Object size 8 does not match size of given value 11111111.
+add_force {/uart_loop/data_in} -radix bin {11111111 0ns}
+run 10 us
+remove_files -fileset sim_1 H:/Xilinxprojects/project_uartcontrol/test/uart_loop.v
+update_compile_order -fileset sim_1
+add_files -norecurse {{H:/EECS 700/uart_files/uart_loop.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "H:/EECS 700/uart_files/uart_loop.v" into library work [H:/EECS 700/uart_files/uart_loop.v:1]
+[Wed Feb 08 21:41:02 2017] Launched synth_1...
+Run output will be captured here: H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/synth_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: uart_loop
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:50 ; elapsed = 00:13:25 . Memory (MB): peak = 1540.156 ; gain = 1331.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uart_loop' [H:/EECS 700/uart_files/uart_loop.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [H:/Xilinxprojects/project_uartcontrol/ngc/uart_rx.v:1]
+	Parameter CLOCK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_DIVIDE bound to: 10416 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (1#1) [H:/Xilinxprojects/project_uartcontrol/ngc/uart_rx.v:1]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [H:/Xilinxprojects/project_uartcontrol/ngc/uart_tx.v:1]
+	Parameter CLOCK_FREQUENCY bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 9600 - type: integer 
+	Parameter BAUD_DIVIDE bound to: 10416 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (2#1) [H:/Xilinxprojects/project_uartcontrol/ngc/uart_tx.v:1]
+INFO: [Synth 8-256] done synthesizing module 'uart_loop' (3#1) [H:/EECS 700/uart_files/uart_loop.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:51 ; elapsed = 00:13:26 . Memory (MB): peak = 1566.977 ; gain = 1357.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:51 ; elapsed = 00:13:26 . Memory (MB): peak = 1566.977 ; gain = 1357.922
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:54 ; elapsed = 00:13:29 . Memory (MB): peak = 1694.293 ; gain = 1485.238
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1694.293 ; gain = 186.363
+add_files -fileset constrs_1 -norecurse {{H:/EECS 700/Nexys4_Master.xdc}}
+place_ports tx P2
+place_ports {led[1]} V9
+set_property package_pin "" [get_ports [list  {led[7]}]]
+place_ports {led[0]} T8
+place_ports {led[2]} R8
+place_ports {led[3]} T6
+place_ports {led[4]} T5
+place_ports {led[5]} T4
+place_ports {led[6]} U7
+place_ports clock E3
+place_ports rx U9
+place_ports reset U8
+place_ports {led[7]} V6
+set_property IOSTANDARD LVCMOS33 [get_ports [list tx]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rx]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+set_property target_constrs_file {H:/EECS 700/Nexys4_Master.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Feb 08 21:52:22 2017] Launched synth_1...
+Run output will be captured here: H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/synth_1/runme.log
+[Wed Feb 08 21:52:22 2017] Launched impl_1...
+Run output will be captured here: H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Wed Feb 08 21:54:45 2017] Launched impl_1...
+Run output will be captured here: H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1701.320 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274664066A
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210274664066A}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210274664066A
+disconnect_hw_server localhost:3121
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 08 22:07:20 2017...

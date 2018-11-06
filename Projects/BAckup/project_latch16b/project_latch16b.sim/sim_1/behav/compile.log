@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity latch16b
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new/latch_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity latch16b_tb

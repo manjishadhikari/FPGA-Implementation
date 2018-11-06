@@ -1,0 +1,11 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rams_sp_rom
+ERROR: [VRFC 10-91] conv_integer is not declared [V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd:45]
+ERROR: [VRFC 10-73] rom is not a signal [V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd:45]
+ERROR: [VRFC 10-1472] type error near to_bitvector ; expected type std_logic_vector [V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd:45]
+ERROR: [VRFC 10-91] conv_integer is not declared [V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd:47]
+ERROR: [VRFC 10-1472] type error near %s ; expected type %s
+ERROR: [VRFC 10-704] formal b has no actual or default value [V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd:47]
+ERROR: [VRFC 10-925] indexed name is not a std_logic_vector [V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd:47]
+ERROR: [VRFC 10-1504] unit syn ignored due to previous errors [V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd:20]
+INFO: [VRFC 10-240] VHDL file V:/EECS 700-FPGA/Hw/project_romext/project_romext.srcs/sources_1/new/mainsource.vhd ignored due to errors

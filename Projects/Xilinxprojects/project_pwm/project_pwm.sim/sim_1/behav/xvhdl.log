@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/Xilinxprojects/project_pwm/project_pwm.srcs/sources_1/new/pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity question_5
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/Xilinxprojects/project_pwm/project_pwm.srcs/sim_1/new/simfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_question_5

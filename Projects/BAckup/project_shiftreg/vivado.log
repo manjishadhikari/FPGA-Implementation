@@ -1,0 +1,944 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Mar 24 17:33:44 2017
+# Process ID: 4840
+# Log file: V:/EECS 700-FPGA/New folder/project_shiftreg/vivado.log
+# Journal file: V:/EECS 700-FPGA/New folder/project_shiftreg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 742.855 ; gain = 170.180
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftreg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftreg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftreg
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftreg_behav xil_defaultlib.shiftreg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.shiftreg
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot shiftreg_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 17:34:59 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftreg_behav -key {Behavioral:sim_1:Functional:shiftreg} -tclbatch {shiftreg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftreg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftreg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 759.113 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 17:37:48 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 17:38:29 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftreg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftreg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftreg
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftreg_behav xil_defaultlib.shiftreg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.shiftreg
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot shiftreg_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 17:39:25 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftreg_behav -key {Behavioral:sim_1:Functional:shiftreg} -tclbatch {shiftreg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftreg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftreg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 760.477 ; gain = 0.000
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 17:41:12 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/shiftreg_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftreg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftreg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftreg_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sim_1/new/shiftreg_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_shiftreg
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftreg_behav xil_defaultlib.shiftreg -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.shiftreg in library work located at xsim.dir/work.
+INFO: [USF-XSim-99] Step results log file:'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/elaborate.log' file for more information.
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 17:42:18 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftreg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftreg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftreg
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftreg_behav xil_defaultlib.shiftreg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.shiftreg
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot shiftreg_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 17:42:46 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftreg_behav -key {Behavioral:sim_1:Functional:shiftreg} -tclbatch {shiftreg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftreg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftreg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 768.445 ; gain = 1.621
+add_force {/shiftreg/shift_out} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/shiftreg/shift_out} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/shiftreg/clock} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/shiftreg/clock} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftreg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftreg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftreg
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftreg_behav xil_defaultlib.shiftreg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.shiftreg
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot shiftreg_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 17:45:23 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftreg_behav -key {Behavioral:sim_1:Functional:shiftreg} -tclbatch {shiftreg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftreg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftreg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 776.863 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 17:47:06 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftreg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftreg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftreg
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftreg_behav xil_defaultlib.shiftreg -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.shiftreg
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot shiftreg_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 17:48:30 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftreg_behav -key {Behavioral:sim_1:Functional:shiftreg} -tclbatch {shiftreg.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftreg.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftreg_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 781.152 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1096.988 ; gain = 315.836
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 17:53:49 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftreg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftreg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sim_1/new/shiftreg_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftreg_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftreg_behav xil_defaultlib.shiftreg -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.shiftreg in library work located at xsim.dir/work.
+INFO: [USF-XSim-99] Step results log file:'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/elaborate.log' file for more information.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 17:58:53 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftreg' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftreg_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sim_1/new/shiftreg_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftreg_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftreg_behav xil_defaultlib.shiftreg -log elaborate.log 
+Using 2 slave threads.
+ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.shiftreg in library work located at xsim.dir/work.
+INFO: [USF-XSim-99] Step results log file:'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav/elaborate.log' file for more information.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftregstr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftregstr_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sim_1/new/shiftreg_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftregstr_tb_behav xil_defaultlib.shiftregstr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.shiftregstr [shiftregstr_default]
+Compiling architecture bench of entity xil_defaultlib.shiftregstr_tb
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot shiftregstr_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 18:01:44 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftregstr_tb_behav -key {Behavioral:sim_1:Functional:shiftregstr_tb} -tclbatch {shiftregstr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftregstr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftregstr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1494.508 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftregstr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftregstr_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sim_1/new/shiftreg_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftregstr_tb_behav xil_defaultlib.shiftregstr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.shiftregstr [shiftregstr_default]
+Compiling architecture bench of entity xil_defaultlib.shiftregstr_tb
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot shiftregstr_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 18:03:30 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1495.531 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftregstr_tb_behav -key {Behavioral:sim_1:Functional:shiftregstr_tb} -tclbatch {shiftregstr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftregstr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftregstr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1495.531 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "if". [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:58]
+[Fri Mar 24 18:05:46 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 18:06:25 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd:1]
+[Fri Mar 24 18:06:49 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftregstr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftregstr_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sim_1/new/shiftreg_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftregstr_tb_behav xil_defaultlib.shiftregstr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.shiftregstr [shiftregstr_default]
+Compiling architecture bench of entity xil_defaultlib.shiftregstr_tb
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot shiftregstr_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 18:07:26 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftregstr_tb_behav -key {Behavioral:sim_1:Functional:shiftregstr_tb} -tclbatch {shiftregstr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftregstr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftregstr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1643.070 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftregstr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftregstr_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sim_1/new/shiftreg_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftregstr_tb_behav xil_defaultlib.shiftregstr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.shiftregstr [shiftregstr_default]
+Compiling architecture bench of entity xil_defaultlib.shiftregstr_tb
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot shiftregstr_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 18:08:50 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftregstr_tb_behav -key {Behavioral:sim_1:Functional:shiftregstr_tb} -tclbatch {shiftregstr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftregstr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftregstr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1643.070 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'shiftregstr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj shiftregstr_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sources_1/imports/new/shiftreg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.srcs/sim_1/new/shiftreg_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftregstr_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 7b1e9cf739c94392940c867e7f1f9d62 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot shiftregstr_tb_behav xil_defaultlib.shiftregstr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.shiftregstr [shiftregstr_default]
+Compiling architecture bench of entity xil_defaultlib.shiftregstr_tb
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot shiftregstr_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 18:12:11 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "shiftregstr_tb_behav -key {Behavioral:sim_1:Functional:shiftregstr_tb} -tclbatch {shiftregstr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source shiftregstr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'shiftregstr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1657.348 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+create_project project_latch16b {V:/EECS 700-FPGA/New folder/project_latch16b} -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/constrs_1
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir {V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new}
+close [ open {V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd} w ]
+add_files {{V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd:1]
+[Fri Mar 24 18:19:54 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd:1]
+[Fri Mar 24 18:20:37 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd:1]
+[Fri Mar 24 18:21:49 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Mar 24 18:22:11 2017] Launched impl_1...
+Run output will be captured here: V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.runs/impl_1/runme.log
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir {V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new}
+close [ open {V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new/latch_tb.vhd} w ]
+add_files -fileset sim_1 {{V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new/latch_tb.vhd}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'latch16b_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj latch16b_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity latch16b
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new/latch_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity latch16b_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 58486519c9cb405982b386cadacb3cfd --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot latch16b_tb_behav xil_defaultlib.latch16b_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.latch16b [latch16b_default]
+Compiling architecture bench of entity xil_defaultlib.latch16b_tb
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot latch16b_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 18:43:16 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "latch16b_tb_behav -key {Behavioral:sim_1:Functional:latch16b_tb} -tclbatch {latch16b_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source latch16b_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'latch16b_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1667.652 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'latch16b_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj latch16b_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity latch16b
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new/latch_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity latch16b_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 58486519c9cb405982b386cadacb3cfd --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot latch16b_tb_behav xil_defaultlib.latch16b_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.latch16b [latch16b_default]
+Compiling architecture bench of entity xil_defaultlib.latch16b_tb
+Built simulation snapshot latch16b_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 24 18:44:58 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "latch16b_tb_behav -key {Behavioral:sim_1:Functional:latch16b_tb} -tclbatch {latch16b_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source latch16b_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'latch16b_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1667.652 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 24 18:50:30 2017...

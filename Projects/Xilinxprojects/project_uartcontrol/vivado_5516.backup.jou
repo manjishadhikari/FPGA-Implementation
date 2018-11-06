@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Feb 08 21:30:21 2017
+# Process ID: 5516
+# Current directory: H:/Xilinxprojects/project_uartcontrol
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5440 H:\Xilinxprojects\project_uartcontrol\project_uartcontrol.xpr
+# Log file: H:/Xilinxprojects/project_uartcontrol/vivado.log
+# Journal file: H:/Xilinxprojects/project_uartcontrol\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+launch_simulation
+source uart_loop.tcl
+add_force {/uart_loop/clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/uart_loop/reset} -radix hex {0 0ns}
+add_force {/uart_loop/data_in} -radix hex {11111111 0ns}
+add_force {/uart_loop/data_in} -radix bin {11111111 0ns}
+run 10 us
+remove_files -fileset sim_1 H:/Xilinxprojects/project_uartcontrol/test/uart_loop.v
+update_compile_order -fileset sim_1
+add_files -norecurse {{H:/EECS 700/uart_files/uart_loop.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+add_files -fileset constrs_1 -norecurse {{H:/EECS 700/Nexys4_Master.xdc}}
+place_ports tx P2
+place_ports {led[1]} V9
+set_property package_pin "" [get_ports [list  {led[7]}]]
+place_ports {led[0]} T8
+place_ports {led[2]} R8
+place_ports {led[3]} T6
+place_ports {led[4]} T5
+place_ports {led[5]} T4
+place_ports {led[6]} U7
+place_ports clock E3
+place_ports rx U9
+place_ports reset U8
+place_ports {led[7]} V6
+set_property IOSTANDARD LVCMOS33 [get_ports [list tx]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rx]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+set_property target_constrs_file {H:/EECS 700/Nexys4_Master.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210274664066A}
+disconnect_hw_server localhost:3121
+close_hw
+close_sim

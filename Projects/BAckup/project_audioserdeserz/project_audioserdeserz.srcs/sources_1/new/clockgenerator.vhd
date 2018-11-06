@@ -1,0 +1,67 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 03/23/2017 05:24:15 PM
+-- Design Name: 
+-- Module Name: clockgenerator - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity clockgenerator is
+        port(clock: in std_logic;
+        par_en: out std_logic;
+        ser_en: out std_logic
+        );
+        
+end clockgenerator;
+
+architecture Behavioral of clockgenerator is
+signal ser_count: std_logic_vector(5 downto 0):=(others=>'0');
+signal par_count: std_logic_vector(9 downto 0):=(others=>'0');
+begin
+process(clock)
+begin
+   if rising_edge(clock) then
+            if ser_count="110010" then
+                ser_en<='1';
+                ser_count<="000000";
+            else
+                ser_count<=ser_count+1;
+                ser_en<='0';
+            end if;
+            if par_count="1100100000"  then 
+                par_en<='1';
+                par_count<="0000000000";
+             else
+                 par_count<=par_count+1;
+                par_en<='0';
+             end if;
+     end if;
+end process;
+
+
+end Behavioral;

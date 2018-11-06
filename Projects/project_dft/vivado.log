@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed May 03 14:58:48 2017
+# Process ID: 2492
+# Current directory: H:/project_dft
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10244 H:\project_dft\project_dft.xpr
+# Log file: H:/project_dft/vivado.log
+# Journal file: H:/project_dft\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/project_dft/project_dft.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 836.211 ; gain = 185.125
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 843.242 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 03 15:11:56 2017] Launched synth_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/synth_1/runme.log
+[Wed May 03 15:11:56 2017] Launched impl_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 843.242 ; gain = 0.000
+file copy -force H:/project_dft/project_dft.runs/impl_1/mcs_top.sysdef H:/project_dft/project_dft.sdk/mcs_top.hdf
+
+launch_sdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 872.453 ; gain = 3.781
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 03 20:16:37 2017] Launched synth_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/synth_1/runme.log
+[Wed May 03 20:16:37 2017] Launched impl_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 872.453 ; gain = 0.000
+file copy -force H:/project_dft/project_dft.runs/impl_1/mcs_top.sysdef H:/project_dft/project_dft.sdk/mcs_top.hdf
+
+launch_sdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 872.453 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 03 20:39:59 2017] Launched synth_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/synth_1/runme.log
+[Wed May 03 20:39:59 2017] Launched impl_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 872.453 ; gain = 0.000
+file copy -force H:/project_dft/project_dft.runs/impl_1/mcs_top.sysdef H:/project_dft/project_dft.sdk/mcs_top.hdf
+
+launch_sdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+close [ open H:/project_dft/project_dft.srcs/sources_1/new/dft.vhd w ]
+add_files H:/project_dft/project_dft.srcs/sources_1/new/dft.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 881.453 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 03 21:55:42 2017] Launched synth_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/synth_1/runme.log
+[Wed May 03 21:55:42 2017] Launched impl_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 881.453 ; gain = 0.000
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 881.453 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 03 21:57:59 2017] Launched synth_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/synth_1/runme.log
+[Wed May 03 21:57:59 2017] Launched impl_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 881.453 ; gain = 0.000
+file copy -force H:/project_dft/project_dft.runs/impl_1/mcs_top.sysdef H:/project_dft/project_dft.sdk/mcs_top.hdf
+
+launch_sdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force H:/project_dft/project_dft.runs/impl_1/mcs_top.sysdef H:/project_dft/project_dft.sdk/mcs_top.hdf
+
+launch_sdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file mkdir H:/project_dft/project_dft.sdk
+file copy -force H:/project_dft/project_dft.runs/impl_1/mcs_top.sysdef H:/project_dft/project_dft.sdk/mcs_top.hdf
+
+launch_sdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 884.766 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 03 22:47:41 2017] Launched synth_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/synth_1/runme.log
+[Wed May 03 22:47:41 2017] Launched impl_1...
+Run output will be captured here: H:/project_dft/project_dft.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 884.766 ; gain = 0.000
+file copy -force H:/project_dft/project_dft.runs/impl_1/mcs_top.sysdef H:/project_dft/project_dft.sdk/mcs_top.hdf
+
+launch_sdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace H:/project_dft/project_dft.sdk -hwspec H:/project_dft/project_dft.sdk/mcs_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 04 00:03:14 2017...

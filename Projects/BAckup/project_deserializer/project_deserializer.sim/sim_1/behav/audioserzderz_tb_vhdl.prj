@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_deserializer.srcs/sources_1/new/clockgen.vhd"
+vhdl xil_defaultlib  "../../../project_deserializer.srcs/sources_1/new/serializer.vhd"
+vhdl xil_defaultlib  "../../../project_deserializer.srcs/sources_1/new/deserializer.vhd"
+vhdl xil_defaultlib  "../../../project_deserializer.srcs/sources_1/new/audioserzderz.vhd"
+vhdl xil_defaultlib  "../../../project_deserializer.srcs/sim_1/new/main_tb.vhd"
+
+# Do not sort compile order
+nosort

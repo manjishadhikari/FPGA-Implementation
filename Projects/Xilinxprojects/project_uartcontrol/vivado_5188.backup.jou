@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Feb 10 08:53:23 2017
+# Process ID: 5188
+# Current directory: H:/Xilinxprojects/project_uartcontrol
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1496 H:\Xilinxprojects\project_uartcontrol\project_uartcontrol.xpr
+# Log file: H:/Xilinxprojects/project_uartcontrol/vivado.log
+# Journal file: H:/Xilinxprojects/project_uartcontrol\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_run synth_1 -name synth_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_run synth_1 -name synth_1
+close_project
+create_project project_rx H:/Xilinxprojects/project_rx -part xc7a100tcsg324-1
+file mkdir H:/Xilinxprojects/project_rx/project_rx.srcs/sources_1/new
+close [ open H:/Xilinxprojects/project_rx/project_rx.srcs/sources_1/new/rxx.vhd w ]
+add_files H:/Xilinxprojects/project_rx/project_rx.srcs/sources_1/new/rxx.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

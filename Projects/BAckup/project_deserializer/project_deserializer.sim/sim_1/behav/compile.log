@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/clockgen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clockgenerator
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/serializer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity serializer
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/deserializer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity deserializer
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/audioserzderz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity audioloop
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sim_1/new/main_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity audioserzderz_tb

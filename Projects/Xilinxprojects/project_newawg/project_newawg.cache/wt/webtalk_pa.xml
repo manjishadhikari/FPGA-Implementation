@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sun Feb 26 16:08:17 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="506a2c1873de425eb467cad64718abd0" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="5" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="RunSchematic" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="6" type="JavaHandler"/>
+<property name="ShowView" value="5" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Memory Initialization Files, mem_init_vhd.mif], 6, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectTab_CLOSE_DESIGN, Close Design" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 134, 363" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 138, 471" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 140, 278" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 140, 460" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 147, 137" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 149, 456" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 150, 458" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 154, 138" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 155, 334" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 163, 481" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 168, 187" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 169, 136" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 170, 482" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 177, 128" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 186, 494" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 207, 218" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 214, 270" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 214, 443" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 216, 136" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 228, 322" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 235, 417" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 236, 178" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 242, 306" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 245, 289" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 261, 129" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 287, 301" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 302, 108" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 302, 113" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 308, 94" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 315, 406" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 321, 258" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 322, 87" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 324, 291" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 327, 322" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 332, 404" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 334, 412" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 347, 366" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 349, 322" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 355, 194" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 358, 211" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 371, 307" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 374, 207" value="1" type="GuiResourceData"/>
+<property name="mainfile.vhd, 395, 376" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="2" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

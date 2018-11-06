@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_romext.srcs/sources_1/new/mainsource.vhd"
+
+# Do not sort compile order
+nosort

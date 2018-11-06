@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Feb 10 10:42:12 2017
+# Process ID: 2152
+# Current directory: H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1
+# Command line: vivado.exe -log uart_loop.vdi -applog -messageDb vivado.pb -mode batch -source uart_loop.tcl -notrace
+# Log file: H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1/uart_loop.vdi
+# Journal file: H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source uart_loop.tcl -notrace

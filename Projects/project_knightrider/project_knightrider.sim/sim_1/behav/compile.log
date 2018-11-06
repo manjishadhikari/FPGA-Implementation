@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd ignored due to errors

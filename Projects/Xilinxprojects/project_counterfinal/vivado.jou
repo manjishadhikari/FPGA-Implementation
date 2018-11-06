@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Feb 07 18:55:12 2017
+# Process ID: 8900
+# Current directory: H:/Xilinxprojects/project_counterfinal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5920 H:\Xilinxprojects\project_counterfinal\project_counterfinal.xpr
+# Log file: H:/Xilinxprojects/project_counterfinal/vivado.log
+# Journal file: H:/Xilinxprojects/project_counterfinal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Xilinxprojects/project_counterfinal/project_counterfinal.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+place_ports clk E3
+place_ports enable U9
+place_ports ended T8
+place_ports reset P4
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list enable]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list ended]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+file mkdir H:/Xilinxprojects/project_counterfinal/project_counterfinal.srcs/constrs_1/new
+close [ open H:/Xilinxprojects/project_counterfinal/project_counterfinal.srcs/constrs_1/new/constr.xdc w ]
+add_files -fileset constrs_1 H:/Xilinxprojects/project_counterfinal/project_counterfinal.srcs/constrs_1/new/constr.xdc
+set_property target_constrs_file H:/Xilinxprojects/project_counterfinal/project_counterfinal.srcs/constrs_1/new/constr.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_simulation
+source ratecounter_sourcef_tb.tcl
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {count[23]} {count[22]} {count[21]} {count[20]} {count[19]} {count[18]} {count[17]} {count[16]} {count[15]} {count[14]} {count[13]} {count[12]} {count[11]} {count[10]} {count[9]} {count[8]} {count[7]} {count[6]} {count[5]} {count[4]} {count[3]} {count[2]} {count[1]} {count[0]}]]
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list {count[23]} {count[22]} {count[21]} {count[20]} {count[19]} {count[18]} {count[17]} {count[16]} {count[15]} {count[14]} {count[13]} {count[12]} {count[11]} {count[10]} {count[9]} {count[8]} {count[7]} {count[6]} {count[5]} {count[4]} {count[3]} {count[2]} {count[1]} {count[0]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property package_pin "" [get_ports [list  {count[23]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {count[23]} {count[22]} {count[21]} {count[20]} {count[19]} {count[18]} {count[17]} {count[16]} {count[15]} {count[14]} {count[13]} {count[12]} {count[11]} {count[10]} {count[9]} {count[8]} {count[7]} {count[6]} {count[5]} {count[4]} {count[3]} {count[2]} {count[1]} {count[0]}]]
+set_property offchip_term NONE [get_ports [list {count[23]} {count[22]} {count[21]} {count[20]} {count[19]} {count[18]} {count[17]} {count[16]} {count[15]} {count[14]} {count[13]} {count[12]} {count[11]} {count[10]} {count[9]} {count[8]} {count[7]} {count[6]} {count[5]} {count[4]} {count[3]} {count[2]} {count[1]} {count[0]}]]
+reset_run synth_1
+save_constraints -force
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_counterfinal/project_counterfinal.runs/impl_1/ratecounter_source.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_counterfinal/project_counterfinal.runs/impl_1/ratecounter_source.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_sim

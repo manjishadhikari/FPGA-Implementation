@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Feb 26 19:40:07 2017
+# Process ID: 2804
+# Current directory: H:/Xilinxprojects/project_iptest/project_iptest.runs/dds_compiler_0_synth_1
+# Command line: vivado.exe -log dds_compiler_0.vds -mode batch -messageDb vivado.pb -notrace -source dds_compiler_0.tcl
+# Log file: H:/Xilinxprojects/project_iptest/project_iptest.runs/dds_compiler_0_synth_1/dds_compiler_0.vds
+# Journal file: H:/Xilinxprojects/project_iptest/project_iptest.runs/dds_compiler_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dds_compiler_0.tcl -notrace

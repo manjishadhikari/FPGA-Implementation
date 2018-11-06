@@ -1,0 +1,60 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Fri Mar 10 12:44:04 2017
+| Host         : 2002-12 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file playlist_control_sets_placed.rpt
+| Design       : playlist
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    19 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              46 |           13 |
+| No           | No                    | Yes                    |              10 |            4 |
+| No           | Yes                   | No                     |              21 |            9 |
+| Yes          | No                    | No                     |              10 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              54 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------+-----------------------+-------------------------------------+------------------+----------------+
+|   Clock Signal  |     Enable Signal     |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-----------------+-----------------------+-------------------------------------+------------------+----------------+
+|  clk1_IBUF_BUFG | playlistcounter1/E[0] | playlistaddrcounter1/temp           |                2 |              6 |
+|  clk1_IBUF_BUFG |                       | ratecounter/temp[7]_i_1_n_0         |                3 |              8 |
+|  clk1_IBUF_BUFG | volumecontrol/CEP     |                                     |                3 |             10 |
+|  clk1_IBUF_BUFG | play_IBUF             | playlistcounter1/temp[0]_i_1__1_n_0 |                5 |             20 |
+|  clk1_IBUF_BUFG |                       | reset1_IBUF                         |               10 |             23 |
+|  clk1_IBUF_BUFG | ratecounter/sel       | addrcounter/temp                    |                9 |             28 |
+|  clk1_IBUF_BUFG |                       |                                     |               13 |             46 |
++-----------------+-----------------------+-------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Xilinxprojects/project_uartcontrol/ngc/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Xilinxprojects/project_uartcontrol/ngc/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Xilinxprojects/project_uartcontrol/test/uart_loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_loop
+INFO: [VRFC 10-2263] Analyzing Verilog file "H:/Xilinxprojects/project_uartcontrol/project_uartcontrol.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

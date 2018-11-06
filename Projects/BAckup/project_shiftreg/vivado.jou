@@ -1,0 +1,131 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Mar 24 17:33:44 2017
+# Process ID: 4840
+# Log file: V:/EECS 700-FPGA/New folder/project_shiftreg/vivado.log
+# Journal file: V:/EECS 700-FPGA/New folder/project_shiftreg\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {V:/EECS 700-FPGA/New folder/project_shiftreg/project_shiftreg.xpr}
+launch_simulation
+source shiftreg.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source shiftreg.tcl
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source shiftreg.tcl
+add_force {/shiftreg/shift_out} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/shiftreg/shift_out} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/shiftreg/clock} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/shiftreg/clock} -radix bin {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 10 us
+close_sim
+launch_simulation
+source shiftreg.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source shiftreg.tcl
+open_run synth_1 -name synth_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+source shiftregstr_tb.tcl
+close_sim
+launch_simulation
+source shiftregstr_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source shiftregstr_tb.tcl
+close_sim
+launch_simulation
+source shiftregstr_tb.tcl
+close_sim
+launch_simulation
+source shiftregstr_tb.tcl
+close_sim
+close_project
+create_project project_latch16b {V:/EECS 700-FPGA/New folder/project_latch16b} -part xc7a100tcsg324-1
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/constrs_1
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new
+file mkdir {V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new}
+close [ open {V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd} w ]
+add_files {{V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sources_1/new/latch16b.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new
+file mkdir {V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new}
+close [ open {V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new/latch_tb.vhd} w ]
+add_files -fileset sim_1 {{V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.srcs/sim_1/new/latch_tb.vhd}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source latch16b_tb.tcl
+close_sim
+launch_simulation
+source latch16b_tb.tcl
+close_sim

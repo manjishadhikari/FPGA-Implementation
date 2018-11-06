@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Mar 09 18:06:06 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="fb87564104524b48802a1a64331142e2" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="RunSchematic" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+<property name="SimulationClose" value="4" type="JavaHandler"/>
+<property name="SimulationRun" value="5" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Open Synthesized Design, Schematic], 29, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Synthesis, Open Synthesized Design], 18" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, runmodule_tb ; runmodule_tb(bench" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="5" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="10" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 131, -25" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 133, -13" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 133, -15" value="2" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 14, 69" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 140, -23" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 151, -12" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 19, -82" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 196, -43" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 204, -104" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 228, -9" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 246, 11" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 252, -22" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 29, -45" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 33, -12" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 37, 16" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 510, -63" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 54, -73" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 63, -43" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 7, 72" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 91, 11" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 3" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 5" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 191, 321" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 215, 332" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 225, 403" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 229, 259" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 234, 308" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 252, 314" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 253, 465" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 338, 425" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 413, 273" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 417, 283" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 423, 182" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 484, 282" value="1" type="GuiResourceData"/>
+<property name="runmodule.vhd, 522, 325" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 114, 304" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 134, 96" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 139, 465" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 148, 283" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 172, 231" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 18, 280" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 206, 271" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 225, 159" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 238, 373" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 244, 210" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 254, 553" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 265, 142" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 268, 245" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 282, 560" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 317, 30" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 319, 305" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 323, 322" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 335, 421" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 343, 4" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 348, 163" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 425, 445" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 456, 371" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 491, 330" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 50, 458" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 70, 267" value="1" type="GuiResourceData"/>
+<property name="runmodule_tb.vhd, 75, 268" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="3" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="1" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

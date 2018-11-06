@@ -1,0 +1,377 @@
+22:28:06 **** Build of project mem_rdwr_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_I/libsrc/cpu_v2_5/src"
+make -C microblaze_I/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_3/src"
+make -C microblaze_I/libsrc/iomodule_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_I/libsrc/standalone_v5_5/src"
+make -C microblaze_I/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_5/src"
+make -C microblaze_I/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_3/src"
+make -C microblaze_I/libsrc/iomodule_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iomodule"
+In file included from ../../../include/xstatus.h:53:0,
+                 from xiomodule.h:256,
+                 from xiomodule.c:58:
+xiomodule.c: In function 'XIOModule_DiscreteRead':
+../../../include/xil_assert.h:104:9: warning: 'return' with no value, in function returning non-void
+         return;                                    \
+         ^
+xiomodule.c:767:2: note: in expansion of macro 'Xil_AssertVoid'
+  Xil_AssertVoid((Channel >= 1) && (Channel <= XGPI_DEVICE_COUNT));
+  ^
+"Running Make libs in microblaze_I/libsrc/standalone_v5_5/src"
+make -C microblaze_I/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+'Finished building libraries'
+22:28:29 **** Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_rdwr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_rdwr_bsp/microblaze_I/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mem_rdwr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_rdwr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mem_rdwr.elf  |tee "mem_rdwr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2996	    372	   3128	   6496	   1960	mem_rdwr.elf
+'Finished building: mem_rdwr.elf.size'
+' '
+22:36:26 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:47: warning: unused variable 'rd_di' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                                               ^
+../src/helloworld.c:69:41: warning: unused variable 'rd_dr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                                         ^
+../src/helloworld.c:69:29: warning: unused variable 'rd_cr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                             ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mem_rdwr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_rdwr_bsp/microblaze_I/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mem_rdwr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_rdwr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mem_rdwr.elf  |tee "mem_rdwr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6572	    376	   3124	  10072	   2758	mem_rdwr.elf
+'Finished building: mem_rdwr.elf.size'
+' '
+22:36:34 **** Incremental Build of configuration Debug for project mem_rdwr ****
+make all 
+make: Nothing to be done for `all'.
+22:38:08 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:47: warning: unused variable 'rd_di' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                                               ^
+../src/helloworld.c:69:41: warning: unused variable 'rd_dr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                                         ^
+../src/helloworld.c:69:29: warning: unused variable 'rd_cr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                             ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mem_rdwr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_rdwr_bsp/microblaze_I/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mem_rdwr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_rdwr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mem_rdwr.elf  |tee "mem_rdwr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6572	    376	   3124	  10072	   2758	mem_rdwr.elf
+'Finished building: mem_rdwr.elf.size'
+' '
+22:42:28 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:47: warning: unused variable 'rd_di' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                                               ^
+../src/helloworld.c:69:41: warning: unused variable 'rd_dr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                                         ^
+../src/helloworld.c:69:29: warning: unused variable 'rd_cr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                             ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mem_rdwr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_rdwr_bsp/microblaze_I/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mem_rdwr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_rdwr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mem_rdwr.elf  |tee "mem_rdwr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6568	    376	   3120	  10064	   2750	mem_rdwr.elf
+'Finished building: mem_rdwr.elf.size'
+' '
+22:47:40 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:47: warning: unused variable 'rd_di' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                                               ^
+../src/helloworld.c:69:41: warning: unused variable 'rd_dr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                                         ^
+../src/helloworld.c:69:29: warning: unused variable 'rd_cr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                             ^
+../src/helloworld.c:69:24: warning: unused variable 'rd_b' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di;
+                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mem_rdwr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_rdwr_bsp/microblaze_I/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mem_rdwr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_rdwr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mem_rdwr.elf  |tee "mem_rdwr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6496	    376	   3120	   9992	   2708	mem_rdwr.elf
+'Finished building: mem_rdwr.elf.size'
+' '
+22:59:02 **** Incremental Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+22:59:27 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+23:01:57 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+23:12:02 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+23:13:48 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+23:21:15 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+23:23:33 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:24: fatal error: xil_printf.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+23:24:58 **** Auto Build of project mem_rdwr_bsp ****
+make -k all 
+"Running Make include in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_I/libsrc/cpu_v2_5/src"
+make -C microblaze_I/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_I/libsrc/iomodule_v2_3/src"
+make -C microblaze_I/libsrc/iomodule_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_I/libsrc/standalone_v5_5/src"
+make -C microblaze_I/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_I/libsrc/bram_v4_1/src"
+make -C microblaze_I/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_I/libsrc/cpu_v2_5/src"
+make -C microblaze_I/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_I/libsrc/iomodule_v2_3/src"
+make -C microblaze_I/libsrc/iomodule_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iomodule"
+In file included from ../../../include/xstatus.h:53:0,
+                 from xiomodule.h:256,
+                 from xiomodule.c:58:
+xiomodule.c: In function 'XIOModule_DiscreteRead':
+../../../include/xil_assert.h:104:9: warning: 'return' with no value, in function returning non-void
+         return;                                    \
+         ^
+xiomodule.c:767:2: note: in expansion of macro 'Xil_AssertVoid'
+  Xil_AssertVoid((Channel >= 1) && (Channel <= XGPI_DEVICE_COUNT));
+  ^
+"Running Make libs in microblaze_I/libsrc/standalone_v5_5/src"
+make -C microblaze_I/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+'Finished building libraries'
+23:25:20 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:53: warning: unused variable 'rd_fir' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                                                     ^
+../src/helloworld.c:69:47: warning: unused variable 'rd_di' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                                               ^
+../src/helloworld.c:69:41: warning: unused variable 'rd_dr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                                         ^
+../src/helloworld.c:69:29: warning: unused variable 'rd_cr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                             ^
+../src/helloworld.c:69:24: warning: unused variable 'rd_b' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mem_rdwr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_rdwr_bsp/microblaze_I/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mem_rdwr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_rdwr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mem_rdwr.elf  |tee "mem_rdwr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6524	    376	   3124	  10024	   2728	mem_rdwr.elf
+'Finished building: mem_rdwr.elf.size'
+' '
+23:26:56 **** Auto Build of configuration Debug for project mem_rdwr ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mem_rdwr_bsp/microblaze_I/include -mno-xl-reorder -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:51:0:
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../mem_rdwr_bsp/microblaze_I/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:47: warning: unused variable 'rd_di' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                                               ^
+../src/helloworld.c:69:41: warning: unused variable 'rd_dr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                                         ^
+../src/helloworld.c:69:29: warning: unused variable 'rd_cr' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                             ^
+../src/helloworld.c:69:24: warning: unused variable 'rd_b' [-Wunused-variable]
+     unsigned long rd_a,rd_b,rd_cr,rd_ci,rd_dr,rd_di,rd_fir;
+                        ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mem_rdwr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mem_rdwr_bsp/microblaze_I/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mem_rdwr.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mem_rdwr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mem_rdwr.elf  |tee "mem_rdwr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6584	    376	   3120	  10080	   2760	mem_rdwr.elf
+'Finished building: mem_rdwr.elf.size'
+' '

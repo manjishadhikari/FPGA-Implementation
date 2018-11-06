@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Apr 13 23:16:49 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="da28443e6c97472aa13186c0d64bf974" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="3" type="JavaHandler"/>
+<property name="ReportUtilization" value="1" type="JavaHandler"/>
+<property name="RunSchematic" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="2" type="JavaHandler"/>
+<property name="SimulationClose" value="2" type="JavaHandler"/>
+<property name="SimulationRun" value="8" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, firfilter_4tap - Behavioral (fir.vhd" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="dff.vhd, 226, 199" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 166, 216" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 205, 392" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 217, 412" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 221, 372" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 235, 373" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 237, 389" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 248, 94" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 253, 342" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 262, 331" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 263, 445" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 267, 385" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 272, 127" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 285, 488" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 286, 445" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 287, 302" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 300, 372" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 300, 474" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 301, 439" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 314, 323" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 349, 359" value="1" type="GuiResourceData"/>
+<property name="fir.vhd, 376, 336" value="1" type="GuiResourceData"/>
+<property name="fir_sim.vhd, 136, 55" value="1" type="GuiResourceData"/>
+<property name="fir_sim.vhd, 138, 265" value="1" type="GuiResourceData"/>
+<property name="fir_sim.vhd, 226, 166" value="1" type="GuiResourceData"/>
+<property name="fir_sim.vhd, 364, 224" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="2" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

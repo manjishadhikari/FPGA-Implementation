@@ -1,0 +1,479 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Feb 07 21:14:11 2017
+# Process ID: 2800
+# Current directory: H:/test/project_knightrider
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1116 H:\test\project_knightrider\project_knightrider.xpr
+# Log file: H:/test/project_knightrider/vivado.log
+# Journal file: H:/test/project_knightrider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/test/project_knightrider/project_knightrider.xpr
+INFO: [Project 1-313] Project file moved from 'H:/project_knightrider' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 784.465 ; gain = 145.555
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Tue Feb 07 21:15:02 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 812.617 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274663879A
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/test/project_knightrider/project_knightrider.runs/impl_1/knightrider.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 5535fe9ceedb405ca2cb3cb8879a9059 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot knightrider_tb_behav xil_defaultlib.knightrider_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture bench of entity xil_defaultlib.knightrider_tb
+Built simulation snapshot knightrider_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "knightrider_tb_behav -key {Behavioral:sim_1:Functional:knightrider_tb} -tclbatch {knightrider_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source knightrider_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'knightrider_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 906.035 ; gain = 0.000
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 909.414 ; gain = 0.000
+launch_runs impl_1
+[Tue Feb 07 21:28:03 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+[Tue Feb 07 21:28:03 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Feb 07 21:30:35 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 909.414 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274663879A
+set_property PROGRAM.FILE {H:/test/project_knightrider/project_knightrider.runs/impl_1/knightrider.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/test/project_knightrider/project_knightrider.runs/impl_1/knightrider.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+disconnect_hw_server localhost:3121
+close_hw
+close_hw: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 917.129 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-91] step is not declared [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:51]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-91] step is not declared [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:51]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+remove_files -fileset constrs_1 H:/test/project_knightrider/project_knightrider.srcs/constrs_1/new/constr.xdc
+file delete -force H:/test/project_knightrider/project_knightrider.srcs/constrs_1/new/constr.xdc
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-91] step is not declared [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:51]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib [H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd:1]
+[Tue Feb 07 22:20:08 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib [H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd:1]
+[Tue Feb 07 22:21:26 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib [H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd:1]
+[Tue Feb 07 22:22:08 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib [H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd:1]
+[Tue Feb 07 22:22:43 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-91] step is not declared [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:51]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+  RAM32X1S => RAM32X1S (RAMS32): 16 instances
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:40 . Memory (MB): peak = 1317.422 ; gain = 367.270
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file H:/test/project_knightrider/project_knightrider.srcs/sim_1/new/knight_sim.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'H:/test/project_knightrider/project_knightrider.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close [ open H:/test/project_knightrider/project_knightrider.srcs/constrs_1/new/constr.xdc w ]
+add_files -fileset constrs_1 H:/test/project_knightrider/project_knightrider.srcs/constrs_1/new/constr.xdc
+reset_run synth_1
+launch_runs impl_1
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Feb 07 22:34:36 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+[Tue Feb 07 22:34:36 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Feb 07 22:37:37 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Feb 07 22:42:10 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+[Tue Feb 07 22:42:10 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Feb 07 22:46:17 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274663879A
+set_property PROGRAM.FILE {H:/test/project_knightrider/project_knightrider.runs/impl_1/knightrider.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/test/project_knightrider/project_knightrider.runs/impl_1/knightrider.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1658.199 ; gain = 0.000
+launch_runs impl_1
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Feb 07 22:57:28 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+[Tue Feb 07 22:57:28 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Feb 07 23:00:10 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/test/project_knightrider/project_knightrider.runs/impl_1/knightrider.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Feb 07 23:15:49 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+[Tue Feb 07 23:15:49 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Feb 07 23:20:00 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/test/project_knightrider/project_knightrider.runs/impl_1/knightrider.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1660.516 ; gain = 0.000
+launch_runs impl_1
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Feb 07 23:36:01 2017] Launched synth_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/synth_1/runme.log
+[Tue Feb 07 23:36:01 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Feb 07 23:42:20 2017] Launched impl_1...
+Run output will be captured here: H:/test/project_knightrider/project_knightrider.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/test/project_knightrider/project_knightrider.runs/impl_1/knightrider.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].

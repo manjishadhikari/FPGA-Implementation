@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/counter4.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/volume.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/runmodule.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/addrcounterreal.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/addrcounter.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sources_1/new/knightrider.vhd"
+vhdl xil_defaultlib  "../../../project_2.srcs/sim_1/new/simfile1111.vhd"
+
+# Do not sort compile order
+nosort

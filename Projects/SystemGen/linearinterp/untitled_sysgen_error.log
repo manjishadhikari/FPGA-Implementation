@@ -1,0 +1,46 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2016.2                 C:/Xilinx/Vivado/2016.2
+Matlab 9.0.0.341360 (R2016a)            C:\Program Files\MATLAB\R2016a
+Vivado 2016.2                           C:/Xilinx/Vivado/2016.2
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Design Rule Check Failed
+     Block: 'untitled/ System Generator'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/ System Generator'
+
+Details:
+The "Simulink system period" setting on this System Generator
+token is not appropriate for the rates used in the design. 
+
+The current setting is:  10
+An appropriate setting is:  5/2
+
+Blocks with inappropriate periods included:
+  "untitled/Delay4",  port: "q",  sample period: 5/2
+  "untitled/Delay4",  port: "d",  sample period: 5/2
+  "untitled/Delay5",  port: "q",  sample period: 5/2
+  "untitled/Delay5",  port: "d",  sample period: 5/2
+  "untitled/Gateway Out",  port: "tdata",  sample period: 5/2
+  "untitled/Gateway Out",  port: "gw_out_inport",  sample period: 5/2
+  "untitled/Up Sample",  port: "q",  sample period: 5/2
+  "untitled/Delay",  port: "q",  sample period: 5/2
+  "untitled/Delay",  port: "d",  sample period: 5/2
+  "untitled/CMult",  port: "p",  sample period: 5/2
+  "untitled/CMult",  port: "a",  sample period: 5/2
+  "untitled/Delay1",  port: "q",  sample period: 5/2
+  "untitled/Delay1",  port: "d",  sample period: 5/2
+  "untitled/Delay2",  port: "q",  sample period: 5/2
+  "untitled/Delay2",  port: "d",  sample period: 5/2
+  "untitled/Delay3",  port: "q",  sample period: 5/2
+  "untitled/Delay3",  port: "d",  sample period: 5/2
+  "untitled/AddSub",  port: "s",  sample period: 5/2
+  "untitled/AddSub",  port: "a",  sample period: 5/2
+  "untitled/AddSub",  port: "b",  sample period: 5/2
+
+--------------------------------------------------------------------------------

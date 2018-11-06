@@ -1,0 +1,15 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 58486519c9cb405982b386cadacb3cfd --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot latch16b_tb_behav xil_defaultlib.latch16b_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.latch16b [latch16b_default]
+Compiling architecture bench of entity xil_defaultlib.latch16b_tb
+Built simulation snapshot latch16b_tb_behav

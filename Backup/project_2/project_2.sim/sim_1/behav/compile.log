@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sources_1/new/volume.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity volume
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sources_1/new/runmodule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity runmodule
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity awg
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/prj1/project_2/project_2.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_awg

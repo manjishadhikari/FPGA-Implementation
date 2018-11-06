@@ -1,0 +1,91 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Wed May 03 22:50:01 2017
+| Host         : 2002-07 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file mcs_top_control_sets_placed.rpt
+| Design       : mcs_top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    38 |
+| Unused register locations in slices containing registers |   106 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             107 |           40 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              89 |           42 |
+| Yes          | No                    | No                     |             141 |           45 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             221 |           71 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|   Clock Signal   |                                                                             Enable Signal                                                                            |                                                              Set/Reset Signal                                                              | Slice Load Count | Bel Load Count |
++------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[3].Divide_I/en_16x_baud                   | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART_TX.UART_TX_I1/tx_Data_Enable                                                     |                1 |              1 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.Using_Breakable_Pipe.Take_Intr_MUXCY_3/Using_FPGA.Native_0 |                1 |              1 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/MSR_Rst                                                               |                1 |              1 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/exception_kind[0]                                                     |                1 |              1 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Unsigned_Op_reg                         |                1 |              1 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[1].Divide_I/One_SRL16.SRL16E_I/Clk_En_I_2 |                                                                                                                                            |                1 |              1 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[2].Divide_I/Clk_En_I_1                    |                                                                                                                                            |                1 |              1 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[2].Divide_I/Out1                          |                                                                                                                                            |                1 |              1 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.New_Carry_MUXCY/Using_FPGA.Native_0                        |                1 |              1 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/rst_0/U0/bus_struct_reset[0]                                                                                               |                2 |              2 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[3].Divide_I/en_16x_baud                   |                                                                                                                                            |                1 |              3 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART_TX.UART_TX_I1/tx_Data_Enable                                                                               | processor1/inst/rst_0/U0/peripheral_reset[0]                                                                                               |                1 |              3 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART.Uart_Control_Status_I1/UART_Status[6]_i_1_n_0                                    |                2 |              4 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/R_0                                      |                2 |              4 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/E[0]                                                              |                                                                                                                                            |                1 |              4 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/rst_0/U0/EXT_LPF/lpf_int                                                                                                   |                2 |              5 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/select_ALU_Carry_reg                    |                1 |              5 |
+|  clock_IBUF_BUFG | processor1/inst/rst_0/U0/SEQ/seq_cnt_en                                                                                                                              | processor1/inst/rst_0/U0/SEQ/SEQ_COUNTER/clear                                                                                             |                2 |              6 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/R                                        |                4 |              7 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART_RX.UART_RX_I1/RX_Data[7]_i_1_n_0                                                 |                2 |              8 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART.No_Dynamic_BaudRate.UART_FIT_I/Implement_FIT.Using_SRL16s.SRL16s[3].Divide_I/en_16x_baud                   | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART_RX.UART_RX_I1/Mid_Start_Bit_SRL16/mid_Start_Bit                                  |                2 |              8 |
+|  clock_IBUF_BUFG | addr1                                                                                                                                                                |                                                                                                                                            |                2 |              8 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/IOModule_Core_I1/Using_UART_RX.UART_RX_I1/new_rx_data_write                                                                            | processor1/inst/rst_0/U0/peripheral_reset[0]                                                                                               |                1 |              8 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/uart_tx_write                                                                                                                          | processor1/inst/rst_0/U0/peripheral_reset[0]                                                                                               |                2 |              8 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                               |                7 |             11 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.MUXCY_JUMP_CARRY3/PC_Write                                                           | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                               |                3 |             13 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/PreFetch_Buffer_I/of_valid_FDR_I/E[0]                                                           | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                               |                8 |             16 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/rst_0/U0/peripheral_reset[0]                                                                                               |                8 |             19 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      | processor1/inst/iomodule_0/U0/Using_IO_Bus.io_bus_read_data[31]_i_1_n_0                                                                    |               13 |             32 |
+|  clock_IBUF_BUFG | ram_w_data                                                                                                                                                           |                                                                                                                                            |                6 |             32 |
+|  clock_IBUF_BUFG | IO_read_data[31]_i_1_n_0                                                                                                                                             |                                                                                                                                            |                6 |             32 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               |                                                                                                                                            |               22 |             32 |
+|  clock_IBUF_BUFG | dft1/temp_mult_r                                                                                                                                                     |                                                                                                                                            |                7 |             32 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.clean_iReady_MuxCY/IReady                                                            |                                                                                                                                            |               12 |             45 |
+|  clock_IBUF_BUFG | processor1/inst/iomodule_0/U0/p_21_out                                                                                                                               | processor1/inst/rst_0/U0/peripheral_reset[0]                                                                                               |               15 |             64 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Using_FPGA.of_PipeRun_MuxCY_1/Using_FPGA.Native_0                                               | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/sync_reset                                                                               |               30 |             81 |
+|  clock_IBUF_BUFG |                                                                                                                                                                      |                                                                                                                                            |               42 |            109 |
+|  clock_IBUF_BUFG | processor1/inst/microblaze_I/U0/MicroBlaze_Core_I/Area.Core/Decode_I/Reg_Write                                                                                       |                                                                                                                                            |               32 |            128 |
++------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

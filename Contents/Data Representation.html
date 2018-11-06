@@ -1,0 +1,237 @@
+
+<!-- saved from url=(0069)http://moss.csc.ncsu.edu/~mueller/codeopt/codeopt00/notes/numrep.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta name="GENERATOR" content="Adobe PageMill 2.0 Mac">
+  <title>Data Representation</title>
+<script type="text/javascript" src="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/xhrExtension.js"></script></head>
+<body>
+
+<h2 align="CENTER">Data Representation</h2>
+
+<p>Computer memory stores only sequences of 0's and 1's.  In order for 
+data to be meaningful we must agree how to encode that data with 0's
+and 1's.  Unfortunately, there are several systems that are used.</p>
+
+<dl>
+  <dt><b>Unsigned Integers</b>
+  </dt><dd>- Simply use binary
+  </dd><dd>- Using N bits, the integers 0..2^(N)-1 can be represented.
+  </dd><dd>Examples-17
+
+  </dd><dt><b>Signed Magnitude</b>
+  </dt><dd>- Use the first bit for a sign (0 for +, 1 for -)
+  </dd><dd>- Use the remaining N-1 bits for the magnitude (absolute value), in
+  binary
+  </dd><dd>- For N bits, -(2^(N-1)-1) to +(2^(N-1)-1) can be represented.
+  </dd><dd>- Simple, but arithmetic circuits become awkward
+  </dd><dd>- Two different zeroes are created (+0 is 000..00 and -0 is 100..00)
+  </dd><dd>- Arithmetic is awkward eg. add 0101 with 1110.  Since signs are
+different, determine the larger whose sign will be kept for answer,
+subtract larger from smaller.  Not pretty
+  </dd><dd>-Examples: +15, -6
+
+  </dd><dt><b>Excess-N</b>
+  </dt><dd>- To represent X, use the binary code for X+M
+  </dd><dd>- Excess-2^(N-1) is normal, but any value of M can be used
+  </dd><dd>- The code for zero is 100..00 in Excess-2^(N-1)
+  </dd><dd>- First bit is still a sign bit in Excess-2^(N-1), but 1 is + and 0
+  is -
+  </dd><dd>- Excess-2^(N-1) is almost the same as Twos Complement (differ in sign
+  only)
+  </dd><dd>- Excess-2^(N-1) with N bits can represent -2^(N-1) to +2^(N-1)-1
+  </dd><dd>Example: For 4 bits use excess-8 notation -8,-7,0,7
+
+  </dd><dt><b>Ones Complement</b>
+  </dt><dd>- Positive numbers begin with a 0, otherwise use normal binary codes
+  </dd><dd>- Negative numbers use the complement (toggle all bits) of the code
+  for the corresponding positive number
+  </dd><dd>- For N bits, -(2^(N-1)-1) to +(2^(N-1)-1)
+  </dd><dd>- Two different zeroes are created (+0 is 000..00 and -0 is
+111..11?)
+  </dd><dd>Example: 5, -5 
+
+  </dd><dt><b>Twos Complement</b>
+  </dt><dd>- Positive numbers begin with a 0, otherwise use normal binary codes
+  </dd><dd>- Negative numbers use the "twos complement" of the code
+  for the corresponding positive number
+  </dd><dd>- To "twos complement" something:
+  <dl>
+    <dd>1. Toggle every bit and then add 1 to the result (in binary)
+    </dd><dd>OR
+    </dd><dd>2A. Leave the lowest 1 and trailing zeroes alone. Toggle the other
+    bits.
+    </dd><dd>OR
+    </dd><dd>2B. Toggle any bit which has a 1 bit to its right.
+  </dd></dl>
+  </dd><dd>- Zero is represented ONLY by 00...00 (the only code which does this).
+  </dd><dd>- The "twos complement" operation is self-inverting. Applied
+  to any number (positive or negative) it will negate it (exception: -2^(N-1)
+  cannot be negated).
+  </dd><dd>- The first bit is a sign bit (0 for +, 1 for -)
+  </dd><dd>- Using N bits -(2^(N-1)) to +(2^(N-1)-1) can be represented
+  </dd><dd>Example: 5,-5,4,-4 in all styles
+
+</dd></dl>
+
+<h4>The 4-bit codes for signed integers in these formats:</h4>
+
+<p><table width="448" height="392" border="2" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td width="14%" height="30" align="CENTER" bgcolor="#66cccc">&nbsp;Value</td>
+<td width="14%" align="CENTER" bgcolor="#66cccc">Signed Magnitude</td>
+<td width="14%" align="CENTER" bgcolor="#66cccc">Excess-7</td>
+<td width="14%" align="CENTER" bgcolor="#66cccc">Excess-8</td>
+<td width="14%" align="CENTER" bgcolor="#66cccc">Excess-9</td>
+<td width="15%" align="CENTER" bgcolor="#66cccc">Ones Complement</td>
+<td width="15%" align="CENTER" bgcolor="#66cccc">Twos Complement</td></tr>
+<tr>
+<td width="14%" height="17" align="CENTER" bgcolor="#66cccc">-9</td>
+<td width="14%" align="CENTER">----</td>
+<td width="14%" align="CENTER">----</td>
+<td width="14%" align="CENTER">----</td>
+<td width="14%" align="CENTER">0000</td>
+<td width="15%" align="CENTER">----</td>
+<td width="15%" align="CENTER">----</td></tr>
+<tr>
+<td align="CENTER" bgcolor="#66cccc" height="17">-8</td>
+<td align="CENTER">----</td>
+<td align="CENTER">----</td>
+<td align="CENTER">0000</td>
+<td align="CENTER">0001</td>
+<td align="CENTER">----</td>
+<td align="CENTER">1000</td></tr>
+<tr>
+<td width="14%" height="17" align="CENTER" bgcolor="#66cccc">-7</td>
+<td width="14%" align="CENTER">1111</td>
+<td width="14%" align="CENTER">0000</td>
+<td width="14%" align="CENTER">0001</td>
+<td width="14%" align="CENTER">0010</td>
+<td width="15%" align="CENTER">1000</td>
+<td width="15%" align="CENTER">1001</td></tr>
+<tr>
+<td width="14%" height="17" align="CENTER" bgcolor="#66cccc">-6</td>
+<td width="14%" align="CENTER">1110</td>
+<td width="14%" align="CENTER">0001</td>
+<td width="14%" align="CENTER">0010</td>
+<td width="14%" align="CENTER">0011</td>
+<td width="15%" align="CENTER">1001</td>
+<td width="15%" align="CENTER">1010</td></tr>
+<tr>
+<td width="14%" height="17" align="CENTER" bgcolor="#66cccc">-5</td>
+<td width="14%" align="CENTER">1101</td>
+<td width="14%" align="CENTER">0010</td>
+<td width="14%" align="CENTER">0011</td>
+<td width="14%" align="CENTER">0100</td>
+<td width="15%" align="CENTER">1010</td>
+<td width="15%" align="CENTER">1011</td></tr>
+<tr>
+<td width="14%" height="17" align="CENTER" bgcolor="#66cccc">-4</td>
+<td align="CENTER">1100</td>
+<td align="CENTER">0011</td>
+<td align="CENTER">0100</td>
+<td align="CENTER">0101</td>
+<td align="CENTER">1011</td>
+<td align="CENTER">1100</td></tr>
+<tr>
+<td height="17" align="CENTER" bgcolor="#66cccc">-3</td>
+<td align="CENTER">1011</td>
+<td align="CENTER">0100</td>
+<td align="CENTER">0101</td>
+<td align="CENTER">0110</td>
+<td align="CENTER">1100</td>
+<td align="CENTER">1101</td></tr>
+<tr>
+<td height="17" align="CENTER" bgcolor="#66cccc">-2</td>
+<td align="CENTER">1010</td>
+<td align="CENTER">0101</td>
+<td align="CENTER">0110</td>
+<td align="CENTER">0111</td>
+<td align="CENTER">1101</td>
+<td align="CENTER">1110</td></tr>
+<tr>
+<td height="17" align="CENTER" bgcolor="#66cccc">-1</td>
+<td align="CENTER">1001</td>
+<td align="CENTER">0110</td>
+<td align="CENTER">0111</td>
+<td align="CENTER">1000</td>
+<td align="CENTER">1110</td>
+<td align="CENTER">1111</td></tr>
+<tr>
+<td height="30" align="CENTER" bgcolor="#66cccc">&nbsp;0</td>
+<td align="CENTER">1000 or 0000</td>
+<td align="CENTER">0111</td>
+<td align="CENTER">1000</td>
+<td align="CENTER">1001</td>
+<td align="CENTER">1111 or 0000</td>
+<td align="CENTER">0000</td></tr>
+<tr>
+<td height="17" align="CENTER" bgcolor="#66cccc">+1</td>
+<td align="CENTER">0001</td>
+<td align="CENTER">1000</td>
+<td align="CENTER">1001</td>
+<td align="CENTER">1010</td>
+<td align="CENTER">0001</td>
+<td align="CENTER">0001</td></tr>
+<tr>
+<td height="17" align="CENTER" bgcolor="#66cccc">+2</td>
+<td align="CENTER">0010</td>
+<td align="CENTER">1001</td>
+<td align="CENTER">1010</td>
+<td align="CENTER">1011</td>
+<td align="CENTER">0010</td>
+<td align="CENTER">0010</td></tr>
+<tr>
+<td height="17" align="CENTER" bgcolor="#66cccc">+3</td>
+<td align="CENTER">0011</td>
+<td align="CENTER">1010</td>
+<td align="CENTER">1011</td>
+<td align="CENTER">1100</td>
+<td align="CENTER">0011</td>
+<td align="CENTER">0011</td></tr>
+<tr>
+<td width="14%" height="17" align="CENTER" bgcolor="#66cccc">+4</td>
+<td width="14%" align="CENTER">0100</td>
+<td width="14%" align="CENTER">1011</td>
+<td width="14%" align="CENTER">1100</td>
+<td width="14%" align="CENTER">1101</td>
+<td width="15%" align="CENTER">0100</td>
+<td width="15%" align="CENTER">0100</td></tr>
+<tr>
+<td width="14%" height="17" align="CENTER" bgcolor="#66cccc">+5</td>
+<td width="14%" align="CENTER">0101</td>
+<td width="14%" align="CENTER">1100</td>
+<td width="14%" align="CENTER">1101</td>
+<td width="14%" align="CENTER">1110</td>
+<td width="15%" align="CENTER">0101</td>
+<td width="15%" align="CENTER">0101</td></tr>
+<tr>
+<td width="14%" height="17" align="CENTER" bgcolor="#66cccc">+6</td>
+<td width="14%" align="CENTER">0110</td>
+<td width="14%" align="CENTER">1101</td>
+<td width="14%" align="CENTER">1110</td>
+<td width="14%" align="CENTER">1111</td>
+<td width="15%" align="CENTER">0110</td>
+<td width="15%" align="CENTER">0110</td></tr>
+<tr>
+<td align="CENTER" bgcolor="#66cccc" height="17">+7</td>
+<td align="CENTER">0111</td>
+<td align="CENTER">1110</td>
+<td align="CENTER">1111</td>
+<td align="CENTER">----</td>
+<td align="CENTER">0111</td>
+<td align="CENTER">0111</td></tr>
+<tr>
+<td align="CENTER" bgcolor="#66cccc" height="17">+8</td>
+<td align="CENTER">----</td>
+<td align="CENTER">1111</td>
+<td align="CENTER">----</td>
+<td align="CENTER">----</td>
+<td align="CENTER">----</td>
+<td align="CENTER">----</td></tr>
+</tbody></table>
+</p>
+
+
+
+
+</body></html>

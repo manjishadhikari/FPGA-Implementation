@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Feb 05 14:51:22 2017
+# Process ID: 10204
+# Current directory: H:/Xilinxprojects/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1764 H:\Xilinxprojects\project_2\project_2.xpr
+# Log file: H:/Xilinxprojects/project_2/vivado.log
+# Journal file: H:/Xilinxprojects/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/Xilinxprojects/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_2/project_2.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_2/project_2.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_2/project_2.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+open_run synth_1 -name synth_1
+place_ports rx P2
+place_ports tx R2
+place_ports rx U8
+set_property target_constrs_file {H:/EECS 700/Nexys4_Master.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {H:/Xilinxprojects/project_2/project_2.runs/impl_1/uart_loop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

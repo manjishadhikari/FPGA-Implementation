@@ -1,0 +1,1374 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Feb 28 19:58:47 2017
+# Process ID: 2392
+# Log file: V:/EECS 700-FPGA/project_knightrider-20170301T015724Z-001/project_knightrider/vivado.log
+# Journal file: V:/EECS 700-FPGA/project_knightrider-20170301T015724Z-001/project_knightrider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {V:/EECS 700-FPGA/project_knightrider-20170301T015724Z-001/project_knightrider/project_knightrider.xpr}
+INFO: [Project 1-313] Project file moved from 'H:/test/project_knightrider' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option CompiledLibDirXSim has no valid value
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirIES
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirActivehdl
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CreateRefXciForCoreContainers
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPUserFilesDir
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPStaticSourceDir
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name EnableBDX
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTXSimLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTModelSimLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTQuestaLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTIesLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTVcsLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTRivieraLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTActivehdlLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTXSimExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTModelSimExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTQuestaExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTIesExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTVcsExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTRivieraExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTActivehdlExportSim
+WARNING: [Project 1-231] Project 'project_knightrider.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 669.629 ; gain = 73.555
+save_project_as project_1 {V:/EECS 700-FPGA/project_1} -force
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd ignored due to errors
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+reset_run impl_1
+launch_runs impl_1
+ERROR: [Runs 36-256] This checkpoint was created with a newer version of vivado and cannot be opened in this version.
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:1]
+[Tue Feb 28 20:01:06 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1
+[Tue Feb 28 20:01:56 2017] Launched impl_1...
+Run output will be captured here: V:/EECS 700-FPGA/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Tue Feb 28 20:04:36 2017] Launched impl_1...
+Run output will be captured here: V:/EECS 700-FPGA/project_1/project_1.runs/impl_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-719] formal port/generic <ste3> is not declared in <knightrider> [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd:40]
+ERROR: [VRFC 10-704] formal step3 has no actual or default value [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd:36]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd:8]
+INFO: [VRFC 10-240] VHDL file V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd ignored due to errors
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+remove_files -fileset sim_1 {{V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/knight_sim.vhd}}
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd} w ]
+add_files -fileset sim_1 {{V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e2fcf2d68eb34929969673a3d50033df --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot knightrider_tb_behav xil_defaultlib.knightrider_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture bench of entity xil_defaultlib.knightrider_tb
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot knightrider_tb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 28 20:09:25 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "knightrider_tb_behav -key {Behavioral:sim_1:Functional:knightrider_tb} -tclbatch {knightrider_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source knightrider_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'knightrider_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 754.316 ; gain = 11.137
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'knightrider_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj knightrider_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider_tb
+ERROR: [VRFC 10-91] clk is not declared [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:57]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:8]
+INFO: [VRFC 10-240] VHDL file V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd ignored due to errors
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+create_ip -name xbip_dsp48_macro -vendor xilinx.com -library ip -version 3.0 -module_name xbip_dsp48_macro_0
+set_property -dict [list CONFIG.instruction1 {A*B} CONFIG.a_width {12} CONFIG.b_width {4} CONFIG.output_properties {User_Defined} CONFIG.p_width {12} CONFIG.areg_3 {true} CONFIG.areg_4 {true} CONFIG.breg_3 {true} CONFIG.breg_4 {true} CONFIG.creg_3 {false} CONFIG.creg_4 {false} CONFIG.creg_5 {false} CONFIG.mreg_5 {true} CONFIG.preg_6 {true} CONFIG.d_width {18} CONFIG.a_binarywidth {0} CONFIG.b_binarywidth {0} CONFIG.concat_width {48} CONFIG.concat_binarywidth {0} CONFIG.c_binarywidth {0} CONFIG.pcin_binarywidth {0} CONFIG.p_full_width {16} CONFIG.p_binarywidth {0}] [get_ips xbip_dsp48_macro_0]
+generate_target {instantiation_template} [get_files {{v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/xbip_dsp48_macro_0/xbip_dsp48_macro_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xbip_dsp48_macro_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/xbip_dsp48_macro_0/xbip_dsp48_macro_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xbip_dsp48_macro_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'xbip_dsp48_macro_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xbip_dsp48_macro_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'xbip_dsp48_macro_0' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xbip_dsp48_macro_0'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/xbip_dsp48_macro_0/xbip_dsp48_macro_0.xci}}]
+launch_run -jobs 4 xbip_dsp48_macro_0_synth_1
+[Tue Feb 28 21:25:42 2017] Launched xbip_dsp48_macro_0_synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/project_1/project_1.runs/xbip_dsp48_macro_0_synth_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files -fileset xbip_dsp48_macro_0 {{v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/xbip_dsp48_macro_0/xbip_dsp48_macro_0.xci}}
+delete_fileset xbip_dsp48_macro_0
+file delete -force {v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/xbip_dsp48_macro_0}
+create_ip -name xbip_dsp48_macro -vendor xilinx.com -library ip -version 3.0 -module_name dsp48e1_prim
+set_property -dict [list CONFIG.instruction1 {A*B} CONFIG.a_width {16} CONFIG.b_width {4} CONFIG.output_properties {User_Defined} CONFIG.p_width {16} CONFIG.areg_3 {true} CONFIG.areg_4 {true} CONFIG.breg_3 {true} CONFIG.breg_4 {true} CONFIG.creg_3 {false} CONFIG.creg_4 {false} CONFIG.creg_5 {false} CONFIG.mreg_5 {true} CONFIG.preg_6 {true} CONFIG.d_width {18} CONFIG.a_binarywidth {0} CONFIG.b_binarywidth {0} CONFIG.concat_width {48} CONFIG.concat_binarywidth {0} CONFIG.c_binarywidth {0} CONFIG.pcin_binarywidth {0} CONFIG.p_full_width {20} CONFIG.p_binarywidth {0}] [get_ips dsp48e1_prim]
+generate_target {instantiation_template} [get_files {{v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/dsp48e1_prim.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dsp48e1_prim'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/dsp48e1_prim.xci}}]
+generate_target all [get_files  {{v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/dsp48e1_prim.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dsp48e1_prim'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dsp48e1_prim'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'dsp48e1_prim' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dsp48e1_prim'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'dsp48e1_prim' does not support 'Verilog Simulation' output products, delivering 'VHDL Simulation' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dsp48e1_prim'...
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:1]
+[Tue Feb 28 21:37:58 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [V:/EECS 700-FPGA/project_1/project_1.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [V:/EECS 700-FPGA/project_1/project_1.srcs/constrs_1/new/constr.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM32X1S => RAM32X1S (RAMS32): 16 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1283.641 ; gain = 308.590
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e2fcf2d68eb34929969673a3d50033df --debug typical --relax --mt 2 -L xbip_dsp48_wrapper_v3_0 -L xbip_utils_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_macro_v3_0 -L xil_defaultlib -L secureip --snapshot tb_knightrider_behav xil_defaultlib.tb_knightrider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv_comp
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(2,0,1,2,"NO_RESET","DIR...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(2,2,1...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(0,0,"art...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv [\xbip_dsp48_macro_v3_0_viv(0,0,"...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0 [\xbip_dsp48_macro_v3_0(0,0,"arti...]
+Compiling architecture dsp48e1_prim_arch of entity xil_defaultlib.dsp48e1_prim [dsp48e1_prim_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture tb of entity xil_defaultlib.tb_knightrider
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_knightrider_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 28 22:27:24 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1639.098 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_knightrider_behav -key {Behavioral:sim_1:Functional:tb_knightrider} -tclbatch {tb_knightrider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_knightrider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_knightrider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1646.324 ; gain = 7.227
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e2fcf2d68eb34929969673a3d50033df --debug typical --relax --mt 2 -L xbip_dsp48_wrapper_v3_0 -L xbip_utils_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_macro_v3_0 -L xil_defaultlib -L secureip --snapshot tb_knightrider_behav xil_defaultlib.tb_knightrider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv_comp
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(2,0,1,2,"NO_RESET","DIR...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(2,2,1...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(0,0,"art...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv [\xbip_dsp48_macro_v3_0_viv(0,0,"...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0 [\xbip_dsp48_macro_v3_0(0,0,"arti...]
+Compiling architecture dsp48e1_prim_arch of entity xil_defaultlib.dsp48e1_prim [dsp48e1_prim_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture tb of entity xil_defaultlib.tb_knightrider
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot tb_knightrider_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 28 22:29:38 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1665.617 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_knightrider_behav -key {Behavioral:sim_1:Functional:tb_knightrider} -tclbatch {tb_knightrider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_knightrider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_knightrider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1665.617 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e2fcf2d68eb34929969673a3d50033df --debug typical --relax --mt 2 -L xbip_dsp48_wrapper_v3_0 -L xbip_utils_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_macro_v3_0 -L xil_defaultlib -L secureip --snapshot tb_knightrider_behav xil_defaultlib.tb_knightrider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv_comp
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(2,0,1,2,"NO_RESET","DIR...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(2,2,1...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(0,0,"art...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv [\xbip_dsp48_macro_v3_0_viv(0,0,"...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0 [\xbip_dsp48_macro_v3_0(0,0,"arti...]
+Compiling architecture dsp48e1_prim_arch of entity xil_defaultlib.dsp48e1_prim [dsp48e1_prim_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture tb of entity xil_defaultlib.tb_knightrider
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot tb_knightrider_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 28 22:32:55 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1665.617 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_knightrider_behav -key {Behavioral:sim_1:Functional:tb_knightrider} -tclbatch {tb_knightrider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_knightrider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_knightrider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1665.617 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+ERROR: [VRFC 10-1412] syntax error near ' [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:62]
+ERROR: [VRFC 10-1504] unit tb ignored due to previous errors [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:7]
+INFO: [VRFC 10-240] VHDL file V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd ignored due to errors
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e2fcf2d68eb34929969673a3d50033df --debug typical --relax --mt 2 -L xbip_dsp48_wrapper_v3_0 -L xbip_utils_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_macro_v3_0 -L xil_defaultlib -L secureip --snapshot tb_knightrider_behav xil_defaultlib.tb_knightrider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv_comp
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(2,0,1,2,"NO_RESET","DIR...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(2,2,1...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(0,0,"art...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv [\xbip_dsp48_macro_v3_0_viv(0,0,"...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0 [\xbip_dsp48_macro_v3_0(0,0,"arti...]
+Compiling architecture dsp48e1_prim_arch of entity xil_defaultlib.dsp48e1_prim [dsp48e1_prim_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture tb of entity xil_defaultlib.tb_knightrider
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot tb_knightrider_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 28 22:36:48 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1670.590 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_knightrider_behav -key {Behavioral:sim_1:Functional:tb_knightrider} -tclbatch {tb_knightrider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_knightrider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_knightrider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1670.590 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+ERROR: [VRFC 10-91] data_out is not declared [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:47]
+ERROR: [VRFC 10-283] actual of formal out port data_out cannot be an expression [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:47]
+ERROR: [VRFC 10-1504] unit tb ignored due to previous errors [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:7]
+INFO: [VRFC 10-240] VHDL file V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd ignored due to errors
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd:1]
+INFO: [HDL 9-1061] Parsing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:1]
+[Tue Feb 28 22:45:00 2017] Launched synth_1...
+Run output will be captured here: V:/EECS 700-FPGA/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Tue Feb 28 22:45:57 2017] Launched impl_1...
+Run output will be captured here: V:/EECS 700-FPGA/project_1/project_1.runs/impl_1/runme.log
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+ERROR: [VRFC 10-91] data_out is not declared [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:47]
+ERROR: [VRFC 10-283] actual of formal out port data_out cannot be an expression [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:47]
+ERROR: [VRFC 10-1504] unit tb ignored due to previous errors [V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd:7]
+INFO: [VRFC 10-240] VHDL file V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd ignored due to errors
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: knightrider
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:04:55 ; elapsed = 02:50:44 . Memory (MB): peak = 1691.887 ; gain = 1511.523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'knightrider' [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:41]
+INFO: [Synth 8-3491] module 'ratecounter_source' declared at 'V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd:6' bound to instance 'ratecounter' of component 'ratecounter_source' [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'ratecounter_source' [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'ratecounter_source' (1#1) [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd:19]
+INFO: [Synth 8-3491] module 'addrcounter_source' declared at 'V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd:6' bound to instance 'addrcounter' of component 'addrcounter_source' [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'addrcounter_source' [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'addrcounter_source' (2#1) [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd:15]
+INFO: [Synth 8-3491] module 'memory_01' declared at 'V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd:7' bound to instance 'mem' of component 'memory_01' [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'memory_01' [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'memory_01' (3#1) [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd:16]
+INFO: [Synth 8-3491] module 'dsp48e1_prim' declared at 'v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/synth/dsp48e1_prim.vhd:59' bound to instance 'ampmodulation' of component 'dsp48e1_prim' [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'dsp48e1_prim' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/synth/dsp48e1_prim.vhd:68]
+INFO: [Synth 8-3491] module 'xbip_dsp48_macro_v3_0' declared at 'v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd:109' bound to instance 'U0' of component 'xbip_dsp48_macro_v3_0' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/synth/dsp48e1_prim.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'xbip_dsp48_macro_v3_0' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd:229]
+INFO: [Synth 8-3491] module 'xbip_dsp48_macro_v3_0_viv' declared at 'v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:4318' bound to instance 'i_synth' of component 'xbip_dsp48_macro_v3_0_viv' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'xbip_dsp48_macro_v3_0_viv' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:4450]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:818]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:821]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:824]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:828]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:833]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:837]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:845]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:848]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:851]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:854]
+INFO: [Synth 8-638] synthesizing module 'xbip_dsp48_macro_synth' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:3223]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:1045]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:3392]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized0' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized1' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized1' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized2' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized2' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized3' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized3' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized4' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized4' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized5' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized5' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized6' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized6' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized7' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized7' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized8' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized8' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized9' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized9' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized10' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized10' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_viv__parameterized11' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:581]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_viv__parameterized11' (4#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'xbip_dsp48e1_wrapper_v3_0' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1649]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1675]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1678]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1681]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1684]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1687]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1690]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1693]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1696]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1699]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1702]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1705]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1708]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1711]
+INFO: [Synth 8-113] binding component instance 'i_primitive' to cell 'DSP48E1' [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'xbip_dsp48e1_wrapper_v3_0' (5#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd:1649]
+INFO: [Synth 8-256] done synthesizing module 'xbip_dsp48_macro_synth' (6#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:3223]
+INFO: [Synth 8-256] done synthesizing module 'xbip_dsp48_macro_v3_0_viv' (7#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:4450]
+INFO: [Synth 8-256] done synthesizing module 'xbip_dsp48_macro_v3_0' (8#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd:229]
+INFO: [Synth 8-256] done synthesizing module 'dsp48e1_prim' (9#1) [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/synth/dsp48e1_prim.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'knightrider' (10#1) [V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:59 ; elapsed = 02:50:48 . Memory (MB): peak = 1728.863 ; gain = 1548.500
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:59 ; elapsed = 02:50:48 . Memory (MB): peak = 1728.863 ; gain = 1548.500
+---------------------------------------------------------------------------------
+INFO: [Synth 37-8] Instance 'i_synth' of a module 'xbip_dsp48_macro_v3_0_viv' contains a secure attribute.  This instance will appear as a black box in elaborated RTL design. [v:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd:4318]
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [V:/EECS 700-FPGA/project_1/project_1.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [V:/EECS 700-FPGA/project_1/project_1.srcs/constrs_1/new/constr.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:05:07 ; elapsed = 02:50:56 . Memory (MB): peak = 1850.125 ; gain = 1669.762
+56 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1850.125 ; gain = 158.965
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e2fcf2d68eb34929969673a3d50033df --debug typical --relax --mt 2 -L xbip_dsp48_wrapper_v3_0 -L xbip_utils_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_macro_v3_0 -L xil_defaultlib -L secureip --snapshot tb_knightrider_behav xil_defaultlib.tb_knightrider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv_comp
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(2,0,1,2,"NO_RESET","DIR...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(2,2,1...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(0,0,"art...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv [\xbip_dsp48_macro_v3_0_viv(0,0,"...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0 [\xbip_dsp48_macro_v3_0(0,0,"arti...]
+Compiling architecture dsp48e1_prim_arch of entity xil_defaultlib.dsp48e1_prim [dsp48e1_prim_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture tb of entity xil_defaultlib.tb_knightrider
+Built simulation snapshot tb_knightrider_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 28 22:51:32 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1850.125 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_knightrider_behav -key {Behavioral:sim_1:Functional:tb_knightrider} -tclbatch {tb_knightrider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_knightrider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_knightrider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1850.125 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e2fcf2d68eb34929969673a3d50033df --debug typical --relax --mt 2 -L xbip_dsp48_wrapper_v3_0 -L xbip_utils_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_macro_v3_0 -L xil_defaultlib -L secureip --snapshot tb_knightrider_behav xil_defaultlib.tb_knightrider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv_comp
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(2,0,1,2,"NO_RESET","DIR...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(2,2,1...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(0,0,"art...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv [\xbip_dsp48_macro_v3_0_viv(0,0,"...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0 [\xbip_dsp48_macro_v3_0(0,0,"arti...]
+Compiling architecture dsp48e1_prim_arch of entity xil_defaultlib.dsp48e1_prim [dsp48e1_prim_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture tb of entity xil_defaultlib.tb_knightrider
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot tb_knightrider_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 28 22:54:42 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1850.125 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_knightrider_behav -key {Behavioral:sim_1:Functional:tb_knightrider} -tclbatch {tb_knightrider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_knightrider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_knightrider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1850.125 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_knightrider' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_knightrider_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_wrapper_v3_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0_vh_rfs.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/xbip_dsp48_macro_v3_0/hdl/xbip_dsp48_macro_v3_0.vhd" into library xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_macro_v3_0
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/ip/dsp48e1_prim/sim/dsp48e1_prim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dsp48e1_prim
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/counter4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounterreal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/addrcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sources_1/new/knightrider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity knightrider
+INFO: [VRFC 10-163] Analyzing VHDL file "V:/EECS 700-FPGA/project_1/project_1.srcs/sim_1/new/simfile1111.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_knightrider
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto e2fcf2d68eb34929969673a3d50033df --debug typical --relax --mt 2 -L xbip_dsp48_wrapper_v3_0 -L xbip_utils_v3_0 -L xbip_pipe_v3_0 -L xbip_dsp48_macro_v3_0 -L xil_defaultlib -L secureip --snapshot tb_knightrider_behav xil_defaultlib.tb_knightrider -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0.xbip_utils_v3_0_pkg
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv_comp
+Compiling package xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_pkg
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.ratecounter_source [ratecounter_source_default]
+Compiling architecture behavioral of entity xil_defaultlib.addrcounter_source [addrcounter_source_default]
+Compiling architecture syn of entity xil_defaultlib.memory_01 [memory_01_default]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(2,0,1,2,"NO_RESET","DIR...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(2,2,1...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(0,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_pipe_v3_0.xbip_pipe_v3_0_viv [\xbip_pipe_v3_0_viv(1,0,0,0,0,0,...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(0,0,"art...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0_viv [\xbip_dsp48_macro_v3_0_viv(0,0,"...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0.xbip_dsp48_macro_v3_0 [\xbip_dsp48_macro_v3_0(0,0,"arti...]
+Compiling architecture dsp48e1_prim_arch of entity xil_defaultlib.dsp48e1_prim [dsp48e1_prim_default]
+Compiling architecture behavioral of entity xil_defaultlib.knightrider [knightrider_default]
+Compiling architecture tb of entity xil_defaultlib.tb_knightrider
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot tb_knightrider_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source V:/EECS -notrace
+couldn't read file "V:/EECS": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 28 23:02:15 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1850.125 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'V:/EECS 700-FPGA/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_knightrider_behav -key {Behavioral:sim_1:Functional:tb_knightrider} -tclbatch {tb_knightrider.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source tb_knightrider.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_knightrider_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1850.125 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1850.125 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 28 23:14:00 2017...

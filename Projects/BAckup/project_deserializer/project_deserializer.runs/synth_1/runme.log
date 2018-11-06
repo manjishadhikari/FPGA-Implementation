@@ -1,0 +1,289 @@
+
+*** Running vivado
+    with args -log audioloop.vds -m64 -mode batch -messageDb vivado.pb -notrace -source audioloop.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source audioloop.tcl -notrace
+Command: synth_design -top audioloop -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2016.04' and will expire in -334 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 266.227 ; gain = 85.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'audioloop' [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/audioserzderz.vhd:45]
+INFO: [Synth 8-3491] module 'deserializer' declared at 'V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/deserializer.vhd:34' bound to instance 'deserializer1' of component 'deserializer' [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/audioserzderz.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'deserializer' [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/deserializer.vhd:44]
+INFO: [Synth 8-3491] module 'clockgenerator' declared at 'V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/clockgen.vhd:34' bound to instance 'clockgen' of component 'clockgenerator' [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/deserializer.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'clockgenerator' [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/clockgen.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'clockgenerator' (1#1) [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/clockgen.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'deserializer' (2#1) [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/deserializer.vhd:44]
+INFO: [Synth 8-3491] module 'serializer' declared at 'V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/serializer.vhd:34' bound to instance 'serializer1' of component 'serializer' [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/audioserzderz.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'serializer' [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/serializer.vhd:41]
+INFO: [Synth 8-3491] module 'clockgenerator' declared at 'V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/clockgen.vhd:34' bound to instance 'clockgen2' of component 'clockgenerator' [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/serializer.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'serializer' (3#1) [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/serializer.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'audioloop' (4#1) [V:/EECS 700-FPGA/New folder/project_deserializer/project_deserializer.srcs/sources_1/new/audioserzderz.vhd:45]
+WARNING: [Synth 8-3917] design audioloop has port mic_sel driven by constant 0
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 301.461 ; gain = 121.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 301.461 ; gain = 121.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 301.461 ; gain = 121.137
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 308.520 ; gain = 128.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                6 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   3 Input      6 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clockgenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      6 Bit        Muxes := 1     
+Module deserializer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+Module serializer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 445.871 ; gain = 265.547
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design audioloop has port mic_sel driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 447.145 ; gain = 266.820
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 447.145 ; gain = 266.820
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/clockgen2/micin_count_reg[5] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/clockgen2/micin_count_reg[4] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/clockgen2/micin_count_reg[3] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/clockgen2/micin_count_reg[2] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/clockgen2/micin_count_reg[1] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/clockgen2/micin_count_reg[0] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[15] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[14] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[13] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[12] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[11] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[10] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[9] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[8] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[7] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[6] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[5] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[4] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[3] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[2] ) is unused and will be removed from module audioloop.
+WARNING: [Synth 8-3332] Sequential element (\serializer1/shiftreg_reg[0] ) is unused and will be removed from module audioloop.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     5|
+|3     |LUT2 |     5|
+|4     |LUT3 |     8|
+|5     |LUT4 |     8|
+|6     |LUT5 |     8|
+|7     |LUT6 |    15|
+|8     |FDRE |    73|
+|9     |FDSE |     4|
+|10    |IBUF |     2|
+|11    |OBUF |    21|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------+-----------------+------+
+|      |Instance        |Module           |Cells |
++------+----------------+-----------------+------+
+|1     |top             |                 |   150|
+|2     |  deserializer1 |deserializer     |    85|
+|3     |    clockgen    |clockgenerator_0 |    53|
+|4     |  serializer1   |serializer       |    41|
+|5     |    clockgen2   |clockgenerator   |    39|
++------+----------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 465.660 ; gain = 285.336
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 465.660 ; gain = 249.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 465.660 ; gain = 285.336
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 524.645 ; gain = 311.664
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 524.645 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 21:23:42 2017...

@@ -1,0 +1,46 @@
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+--use IEEE.STD_LOGIC_arith.all
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+library unisim;
+use UNISIM.VComponents.all;
+
+entity Addrr_counter is
+    Port ( clk : in STD_LOGIC;
+           rst : in STD_LOGIC;
+           ce : in STD_LOGIC;
+           countout : out STD_LOGIC_VECTOR (15 downto 0)
+           );
+end Addrr_counter;
+
+architecture Behavioral of Addrr_counter is
+
+signal count: STD_LOGIC_VECTOR(15 downto 0):=(others=>'0');
+signal limit : STD_LOGIC_VECTOR(15 downto 0):=(others=>'1');
+begin 
+ countout<=count;
+process(clk,rst)
+begin
+if rising_edge(clk) and ce='1' then
+     if (rst='1') or count=(others=>'1')then
+        count<=(others=>'0');
+     else
+        if count<limit and ce='1'then  
+        count<=count+1;
+        end if;
+     end if;
+else   
+   count<=(others=>'0');
+end if;
+end process;  
+ 
+end Behavioral;

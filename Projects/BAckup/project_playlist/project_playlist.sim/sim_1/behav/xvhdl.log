@@ -1,0 +1,22 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/project_playlist/project_playlist.srcs/sources_1/new/playlistcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity playlistcounter
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/New folder/decoder1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/New folder/addrcount1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity addrcounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/New folder/ratecount3.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ratecounter_source
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/New folder/memory12.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory_01
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/New folder/volume11.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity volume
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/New folder/pdm2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity pdm
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/New folder/dds_top1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity playlist
+INFO: [VRFC 10-163] Analyzing VHDL file "H:/project_playlist/project_playlist.srcs/sim_1/new/paylist_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity awg_tb1
+ERROR: [VRFC 10-91] pdmout is not declared [H:/project_playlist/project_playlist.srcs/sim_1/new/paylist_tb.vhd:51]
+ERROR: [VRFC 10-283] actual of formal out port pdmout cannot be an expression [H:/project_playlist/project_playlist.srcs/sim_1/new/paylist_tb.vhd:51]
+ERROR: [VRFC 10-1504] unit bench ignored due to previous errors [H:/project_playlist/project_playlist.srcs/sim_1/new/paylist_tb.vhd:9]
+INFO: [VRFC 10-240] VHDL file H:/project_playlist/project_playlist.srcs/sim_1/new/paylist_tb.vhd ignored due to errors

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="mcs_top.mmi" key="mcs_top_hw_platform_0-bmmFile"/>
+	<item value="Local" key="mcs_top_hw_platform_0-target"/>
+	<item value="Auto Detect" key="mcs_top_hw_platform_0-device"/>
+	<item value="mcs_top_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="mcs_top.bit" key="mcs_top_hw_platform_0-bitFile"/>
+	<item value="H:\project_dft\project_dft.sdk\mem_rdwr\Debug\mem_rdwr.elf" key="mcs_top_hw_platform_0-microblaze_I-initElf"/>
+	<item value="false" key="mcs_top_hw_platform_0-partial_bit"/>
+</section>

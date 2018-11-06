@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Mar 24 18:21:50 2017
+# Process ID: 8604
+# Log file: V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.runs/synth_1/latch16b.vds
+# Journal file: V:/EECS 700-FPGA/New folder/project_latch16b/project_latch16b.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source latch16b.tcl -notrace
